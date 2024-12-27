@@ -1,0 +1,91 @@
+*{
+    font-family: Okra, Helvetica, sans-serif;
+}
+.AppComponent{
+    /* width: 100%; */
+    margin-top: 40px;
+    background-color: rgb(255, 251, 247);
+}
+.AppFlex{
+    max-width: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: space-evenly;
+    /* border:1px solid #000; */
+    margin-left: 30px;
+    padding:45px 0 ;
+}
+.AppImg {
+    width:300px;
+    /* border:1px solid red; */
+}
+.AppImg img{
+    width:100%;
+    object-fit: cover;
+    transform: none;
+    opacity: 1;
+    will-change: transform, opacity;
+    border-radius: inherit;
+    filter: unset;
+}
+.AppContent{
+    width:45rem;
+    /* border:1px solid red; */
+}
+.AppContent h1{
+    font-size: 2.5rem;
+    color: rgb(54, 54, 54);
+    font-weight: 500;
+}
+.AppContent p{
+    font-size: inherit;
+    color: rgb(54, 54, 54);
+    width: 100%;
+    line-height: 3.2rem;
+}
+.AppInput input{
+   margin-left: 22px;
+}
+.AppInput span{
+    margin-left: 10px;
+}
+.SearchInput{
+    margin-top: 30px;
+}
+.SearchInput input{
+    width:300px;
+    height:45px;
+    border-radius: 5px;
+    background-color: #fff;
+    border:1px solid #c0c0c0;
+    outline: none;
+    padding-left: 10px;
+}
+
+.SearchInput button{
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    white-space: nowrap;
+    background: border-box rgb(239, 79, 95);
+    border-color: rgb(239, 79, 95);
+    outline: none;
+    cursor: pointer;
+}
+.AppDownload{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+.AppLink img{
+    width:130px;
+    height:auto;
+    margin-right: 40px;
+}

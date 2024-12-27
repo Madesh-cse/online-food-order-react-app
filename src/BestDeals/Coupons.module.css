@@ -1,0 +1,97 @@
+.Coupons{
+    max-width: 100%;
+    margin-left: 230px;
+    margin-top: 50px;
+    /* border: 1px solid red; */
+}
+.CouponsContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(min(100%,300px),1fr));
+    row-gap: 30px;
+}
+.CouponsCard{
+    width: 300px;
+    border:1px solid #c0c0c0;
+    padding: 25px;
+    border-radius: 10px;
+}
+.CouponsImg{
+    display: flex;
+    margin-right: 10px;
+}
+.CouponsImg img{
+    width:20%;
+    height:auto;
+    aspect-ratio: 4/4;
+    object-fit: contain;
+    border-radius: 5px;
+    background-color: #c0c0c07a;
+    padding: 10px;
+    margin: 5px 10px 10px 5px;
+}
+.CouponsTitle h2{
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.CouponsTitle p{
+    padding-top: 5px;
+    color:darkgray;
+}
+.CouponsOffer{
+    font-size: 18px;
+    padding-top: 10px;
+}
+.CouponsValid p{
+    font-size: 17px;
+    padding-top: 15px;
+    color:#c0c0c0;
+    font-weight: 500px;
+}
+.Line{
+    margin-top:30px;
+    border-top: 0.5px solid #c0c0c0;
+}
+.ApplyCode{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+.ApplyCode button{
+    padding: 8px;
+    background-color: #fff;
+    border: 1px solid #c0c0c0;
+    outline: none;
+    font-size: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.BankComponent{
+    padding: 30px 10px 0 0;
+}
+.BankContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(min(100%,300px),1fr));
+    row-gap: 30px;
+    margin-top: 30px;
+}
+.BankCard{
+    width: 300px;
+    border:1px solid #c0c0c0;
+    padding: 15px;
+    border-radius: 10px;
+}
+.BankImg{
+    display: flex;
+}
+.BankImg img{
+    border-radius: 5px;
+}
+.BankTitle{
+    padding-left: 20px;
+}
+.BankTitle p{
+    padding-top: 10px;
+}
+.extraLine{
+    padding: 20px 10px 0 5px;
+}

@@ -1,0 +1,63 @@
+*{
+    font-family: circular std book, sans-serif;
+}
+
+section{
+    margin-left: 220px;
+}
+.catFlex{
+    display: flex;
+    justify-content: space-between;
+    padding: 22px;
+    flex-wrap: wrap;
+}
+
+.catFlex h2{
+    font-size: 22px;
+    font-weight: 500;
+}
+.catFlex p{
+    font-size: 13px;
+}
+
+.catagoryRow{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(min(100%,200px),1fr));
+    max-width: 100%;
+}
+
+.catRow{
+    padding:10px;
+    text-decoration: none;
+}
+
+.catCard{
+    width:185px;
+    height:145px;
+    margin-right:10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+}
+.catAlign{
+    text-align: center;
+    padding-top: 30px;  
+}
+.caticon{
+    width:15%;
+    margin: auto;
+    border:1px solid transparent;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    padding: 10px 10px 10px 10px;
+    background-color: #e74a3b !important;
+    color:#fff;
+}   
+.catAlign h4{
+    margin-top: 20px;
+    color:#000000a5;
+}
+.catAlign p{
+    margin-top: 10px;
+    color:#e74a3b;
+    font-size: 13px;
+}

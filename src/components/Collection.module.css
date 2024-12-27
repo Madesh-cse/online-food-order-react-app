@@ -1,0 +1,45 @@
+.collection{
+    padding: 20px;
+}
+.collection h1{
+    font-weight: 500;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+.title h3{
+    font-weight: 500;
+}
+.title a{
+    color: #c60021;
+    text-decoration: none;
+}
+.collectionImg{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.collectionBlock{
+    position: relative;
+    width:300px;
+    height:350px;
+    background-size: cover;
+    border:1px solid #000;
+    border-radius: 5px;
+}
+.collectionImg img{
+    width:300px;
+    height:350px;
+    background-size: cover;
+    border-radius: 5px;
+}
+.collectionTitle{
+    position: absolute;
+    bottom: 20px;
+    left:20px;
+    color:#fff;
+}

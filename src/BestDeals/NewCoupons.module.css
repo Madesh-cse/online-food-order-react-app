@@ -1,0 +1,21 @@
+.BestCoupons{
+    max-width: 100%;
+    margin-left: 226px;
+    margin-top: 50px;
+    /* border: 1px solid red; */
+}
+.BestCouponsFlex{
+    display: flex;
+    justify-content: space-between;
+}
+.BestCouponsFlex h1{
+    padding-left: 15px;
+}
+.CouponsList ul{
+    margin-right: 50px;
+}
+.CouponsList a{
+    margin-right: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}

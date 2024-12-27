@@ -1,0 +1,84 @@
+.CollectionHeader{
+    margin-left: 250px;
+    margin-top: 50px;
+}
+
+.CollectionHeader h1{
+    padding-left: 40px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.CollectionHeader p{
+    padding: 10px 0 0 40px;
+    font-weight: 400;
+
+}
+
+.CollectionHeader hr{
+    width:95%;
+}
+
+.CollectionHeader ul {
+    padding: 20px;
+    list-style-type: none;
+    display: flex;
+}
+
+.CollectionHeader li{
+    margin-left: 30px;
+    font-size: 20px;
+}
+.HandPicked{
+    max-width: 95%;
+    margin-left: 260px;
+    padding:22px;
+    border-radius: 10px;
+    /* border:1px solid red; */
+}
+.collectionList{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(min(280px,100%),1fr));
+    row-gap: 30px;
+    column-gap: 10px;
+    text-decoration: none;
+}
+.collectionLink{
+    position: relative;
+    width:280px;
+    height:310px;
+    background-size: cover;
+    /* border:1px solid #000; */
+    border-radius: 5px;
+}
+
+.CollectionBlock img{
+    width:280px;
+    height:310px;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 5px;
+    filter: brightness(70%);
+}
+.collectionTitle{
+    position: absolute;
+    bottom: 20px;
+    left:20px;
+    color:#fff;
+}
+.collectionTitle h3{
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+.SaveContainerImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.SaveContainerImg img{
+    width:400px;
+}
+.SaveContainer h1{
+    text-align: center;
+    font-weight: 500;
+    padding: 10px;
+}

@@ -1,0 +1,36 @@
+.accordion{
+    max-width: 100%;
+    background: rgb(252, 252, 252);
+    padding: 30px;
+    margin-top: 50px;
+}
+.accordion h1{
+    font-weight: 500;
+    margin-left: 30px;
+}
+.accordionbox{
+    max-width: 80%;
+    border:1px solid #c0c0c0;
+    margin: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.accordionContent{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+.accordionContent h3{
+    font-weight: 500;
+}
+.btn{
+    font-size: 30px;
+    cursor: pointer;
+}
+.contentTopic{
+    margin-left: 20px;
+    line-height: 25px;
+    color:grey
+}

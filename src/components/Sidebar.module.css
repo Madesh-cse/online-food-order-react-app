@@ -1,0 +1,143 @@
+*{
+    font-family: circular std book, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.sidebar{
+    width:220px;
+    height:100vh;
+    position: fixed;
+    background-color: #c60021;
+    background-image: linear-gradient(180deg, #c60021 10%, #224abe 100%);
+    background-size: cover;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+.Logo{
+    color: #fff;
+    background: rgb(255 255 255 / 15%);
+    width: 100%;
+    justify-content: center;
+    box-shadow: 0 .125rem .25rem 0 rgba(58, 59, 69, .2) !important;
+    margin: 0 0 15px;
+    padding-bottom: 10px;
+}
+.Logo img{
+    width:20%;
+    height:auto;
+    margin-left:80px;
+    margin-top: 15px;
+}
+.navlist ul{
+    margin-top: 50px;
+    list-style-type: none;
+    margin-left: 20px;
+}
+.navlist li{
+    margin-bottom: 30px;
+}
+.navlist a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, .8);
+    font-size: 13px;
+}
+.navlist span{
+    margin-right: 10px;
+}
+.navlist a:hover,
+.navlist a.active{
+    color:#fff;
+}
+.extraPage{
+   margin-top: 5px;
+   margin-left: 50px;
+   font-size: 15px;
+   color:rgba(255, 255, 255, .8);
+}
+.arrow{
+    margin-left: 40px;
+}
+.popup{
+    position: relative;
+    width:190px;
+    height:auto;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+.popup button{
+    position: absolute;
+    right: 13px;
+    top: 10px;
+    font-size: 19px;
+    font-weight: 100;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    outline:none;
+    cursor: pointer;
+}
+.popupSymbol{
+    width: 55px;
+    height: 55px;
+    margin: 20px auto;
+    border:1px solid transparent;
+    border-radius: 50%;
+    font-size: 25px;
+    background: rgb(198 0 32 / 13%);
+    color: #c60020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popupContent p{
+    font-size: 12px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.popup span{
+    color: #c60020;
+}
+.words{
+    color:#c0c0c0;
+    padding-top: 10px;
+}
+.orderBtn{
+    width:150px;
+    height:auto;
+    background-color: #c60020;
+    border-radius: 10px;
+    margin: 15px auto;
+}
+.orderBtn a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    font-size: 13px;
+    padding: 10px;
+    text-decoration: none;
+}
+.author{
+    width:190px;
+    padding: 20px 8px;
+    margin: 20px auto;
+    color:#fff;
+}
+.authorContent{
+    display: flex;
+    justify-content: space-evenly;
+}
+.authorContent span{
+    font-size: 30px;
+}
+.authorgmail{
+    font-size: 11px;
+    color:#c0c0c0;
+    margin-top: 5px;
+}

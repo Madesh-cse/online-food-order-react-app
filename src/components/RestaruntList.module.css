@@ -1,0 +1,86 @@
+
+/* *{
+    box-sizing: border-box;
+    outline:1px solid limegreen !important
+} */
+.ResFlex{
+    display: flex;
+    justify-content: space-between;
+    padding: 22px;
+}
+
+.ResFlex h2{
+    font-size: 22px;
+    font-weight: 500;
+}
+.ResFlex p{
+    font-size: 13px;
+}
+.ResCard{
+    width:400px;
+    height:110px;
+    margin-right: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    color:#000;
+}
+.ResRow{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(min(400px,100%),1fr));
+    grid-row-gap:50px;
+    padding: 22px;
+    text-decoration: none;
+}
+.ResCardFlex{
+    display: flex;
+}
+.ResCardFlex img{
+    width:25%;
+    height:auto;
+    border-radius: 5px;
+    background-color: #c0c0c07a;
+    padding: 25px;
+    margin: 5px 10px 10px 5px;
+}
+.ResCardFlex h4{
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.ResDescription{
+    display: flex;
+    margin-top: 10px; 
+}
+.ResDescription p{
+    padding-right: 20px;
+    font-size: 13px;
+    color:rgba(0, 0, 0, 0.656);
+}
+.ResDescription span{
+    margin-right: 10px;
+}
+.Rating{
+    color:gold;
+}
+.location{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 15px;
+    font-size: 13px;
+}
+.delivery{
+    color: #e74a3b !important;
+    background-color: rgba(216, 112, 147, 0.391);
+    border-radius: 5px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    padding: 0 8px 0 8px;
+}
+.delivery span{
+    margin-right: 5px;
+    color:#e74a3b
+}
+.distance{
+    margin: 10px 0 5px 20px;
+}

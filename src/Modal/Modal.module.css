@@ -1,0 +1,183 @@
+/* *{
+    outline: 1px solid limegreen !important;
+} */
+.FilterModal{
+  margin: auto;
+  width:700px;
+  height:580px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  padding: 2rem;
+  background-color: #fff;
+  overflow: hidden;
+
+}
+
+.ModalTitle{
+    display:flex;
+    justify-content: space-between;
+}
+.modalline{
+    width:100%;
+    margin-top: 20px;
+    border: 2px solid #c0c0c04b;
+}
+.ModalContentTab{
+    display: flex;
+    margin-top: 20px;
+}
+.ModalContentTab ul{
+    list-style-type: none;
+    background-color: rgba(192, 192, 192, 0.149);;
+    width:250px;
+    border-right: 1px solid red;
+}
+.ModalContentTab ul li{
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    padding: 25px 22px;
+     /* border: 1px solid red; */
+}
+.ModalContent{
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+.ModalContent1{
+    margin: 30px;
+}
+
+.SortByBtn{
+    font-size: 18px;
+    padding: 15px;
+    /* border:1px solid #000; */
+}
+
+.SortByBtn input{
+    width:1rem;
+    height:1rem;
+    accent-color: #e74a3b ;
+}
+
+.SortByBtn label{
+    margin-left: 5px;
+}
+.ModalFinalBtn{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    /* border:1px solid red; */
+}
+.ModalClearBtn{
+
+    border:none;
+    background-color: transparent;
+    font-size: 18px;
+    cursor: pointer;
+}
+.ModalSaveBtn{
+    width:100px;
+    height: 40px;
+    margin-left: 20px;
+    border:none;
+    background-color: #e74a3b ;
+    font-size: 17px;
+    outline: none;
+    border-radius: 5px;
+    color:#fff;
+    cursor: pointer;
+}
+.topic{
+    font-size: 12px;
+    color: #e74a3b ;
+    margin-top: 5px;
+}
+/* .Cusines{
+    border:1px solid red;
+} */
+.CusinesInput{
+    position: relative;
+    width:100%;
+    position: sticky;
+    /* border: 1px solid red; */
+
+}
+.CusinesInput input{
+    width:400px;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid #c0c0c0;
+    outline: none;
+    padding-left: 40px;
+    font-size: 18px;
+    color:#c0c0c0;
+}
+
+.CusinesInput p{
+    position:absolute ;
+    top:10px;
+    font-size: 25px;
+    padding-left: 10px;
+    color:#c0c0c0;
+}
+.CusinesList{
+    width:100%;
+    height:250px;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.CusinesFlex{
+    padding-top: 20px; 
+    font-size: 18px;
+    color: rgb(156, 156, 156);
+}
+.CusinesFlex label{
+    padding-left: 10px;
+}
+.CusinesFlex input{
+    border-radius: 4px;
+    margin-left: 8px;
+    margin-top: 8px;
+    width: 18px;
+    height: 18px;
+    background: rgb(255, 255, 255);
+    border: 2px solid rgb(156, 156, 156);
+    accent-color:  #e74a3b;
+    cursor: pointer;
+}
+.CusinesFlex input:hover{
+    border: 1px solid #e74a3b;
+}
+.MoreListContent{
+    width:100%;
+    height:250px;
+    overflow-y: scroll;
+    /* border:1px solid red; */
+}
+.MoreFilterInput {
+    padding-top: 20px; 
+    font-size: 18px;
+    color: rgb(156, 156, 156);
+}
+.MoreFilterInput label{
+    padding-left: 10px;
+}
+.MoreFilterInput input{
+    border-radius: 4px;
+    margin-left: 8px;
+    margin-top: 8px;
+    width: 18px;
+    height: 18px;
+    background: rgb(255, 255, 255);
+    border: 2px solid rgb(156, 156, 156);
+    accent-color:  #e74a3b;
+    cursor: pointer;
+}
+
+/* .filter((cusineItem)=>{
+    return Cusines.toLowerCase() === '' ? cusineItem:cusineItem.name.toLowerCase().includes(Cusines)
+}) */
