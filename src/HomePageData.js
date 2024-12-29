@@ -4,12 +4,6 @@ import { MdOutlineClass } from "react-icons/md";
 import { GiKnifeFork } from "react-icons/gi";
 import { FaHome } from "react-icons/fa";
 import { MdBlurLinear } from "react-icons/md";
-import img1 from './asset/RestaruntImg/burgerking.png'
-import img2 from './asset/RestaruntImg/domino.png'
-import img3 from './asset/RestaruntImg/kfc.png'
-import img4 from './asset/RestaruntImg/macd.png'
-import img5 from './asset/RestaruntImg/pizzahut.png'
-import img6 from './asset/RestaruntImg/subway.png'
 import collection1 from './asset/RestaruntImg/collection1.jpg'
 import collection2 from './asset/RestaruntImg/collection2.jpg'
 import collection3 from './asset/RestaruntImg/collection3.jpg'
@@ -59,41 +53,6 @@ import collection4 from './asset/RestaruntImg/collection4..jpg'
 
     }
 
-]
-
-
-export const RestaruntData = [
-
-    {
-        id:1,
-        img:img1,
-        title:'Burger King'
-    },
-    {
-        id:2,
-        img:img2,
-        title:'Pizza Hut'
-    },
-    {
-        id:3,
-        img:img3,
-        title:'KFC'
-    },
-    {
-        id:4,
-        img:img4,
-        title:'MAC Donalds'
-    },
-    {
-        id:5,
-        img:img5,
-        title:'Dominos'
-    },
-    {
-        id:6,
-        img:img6,
-        title:'Subway'
-    }
 ]
 
 export const collectionData = [
