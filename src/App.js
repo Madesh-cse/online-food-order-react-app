@@ -16,6 +16,8 @@ import SavedComponent from './collection/SavedComponent';
 import Coupons from './BestDeals/Coupons';
 import BestDeals from './pages/BestDeals';
 import UsedCoupons from './BestDeals/UsedCoupons';
+import RestaruntPageRoot from './pages/Restaruntpages';
+import Restarunt1 from './RestaruntPages/Restarunt1';
 
 const router = createBrowserRouter([
 
@@ -29,6 +31,11 @@ const router = createBrowserRouter([
 
       {path:'UsedCoupons',element:<UsedCoupons/>}
       
+    ]},
+
+    {path:'Restarunt-List',element:<RestaruntPageRoot/>,children:[
+
+      {path:'Burger-King',element:<Restarunt1/>}
     ]},
 
     {path:'explore', element:<ExploreRoot/>,children:[
