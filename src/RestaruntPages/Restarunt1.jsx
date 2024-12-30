@@ -1,4 +1,5 @@
 import classes from './Restarunt1.module.css'
+import Restarunt1Filter from './Restarunt1Filter';
 import logo from '../asset/RestaruntImg/burgerking.png'
 import { ImSpoonKnife } from "react-icons/im";
 import { MdDeliveryDining } from "react-icons/md";
@@ -8,7 +9,8 @@ import { IoIosStar } from "react-icons/io";
 export default function Restarunt1(){
 
     return(
-        <section className={classes.Restarunt}>
+        <>
+         <section className={classes.Restarunt}>
             <div className={classes.Restaruntsec1}>
                 <div className={classes.Restaruntsec1img}></div>
                 <div className={classes.RestaruntTitleBox}>
@@ -37,5 +39,7 @@ export default function Restarunt1(){
                 </div>
             </div>
         </section>
+        <Restarunt1Filter/>
+        </>
     )
 }
