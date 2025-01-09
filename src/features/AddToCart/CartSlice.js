@@ -1,0 +1,41 @@
+import { createSlice } from "@reduxjs/toolkit";
+
+const initialState = {
+
+    items:[],
+    tempItem:[],
+    grantTotal:0
+}
+
+const CartSlice = createSlice({
+    name:'Cart',
+    initialState,
+    reducers:{
+        // create action function
+        AddItem(state,action){
+
+            const existingItem = state.items.find((item)=>item.id === action.payload.id);
+
+            if(existingItem){
+
+                existingItem.quantity+=1
+            }
+            else{
+                state.items.push({...action.payload,quantity:1})
+            }
+
+            state.tempItem = {...state.items}
+            state.grantTotal = state.items.reduce((sum,item)=>sum+item.caloriesPerServing,0)
+
+            alert('Item is added')
+        },
+        removeItem(state,action){
+            state.items = state.items.filter((item)=>item.id!==action.payload)
+            state.tempItem = [{...state.items}]
+            state.grantTotal = state.items.reduce((sum,item)=>sum+item.caloriesPerServing,0)
+        }
+    }
+})
+
+export default CartSlice.reducer
+export const {AddItem,removeItem} = CartSlice.actions
