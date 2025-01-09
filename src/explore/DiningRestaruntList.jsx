@@ -3,7 +3,6 @@ import DiningData from './DiningRestaruntList'
 import { LiaStarSolid } from "react-icons/lia";
 import { LiaRupeeSignSolid } from "react-icons/lia";
 import { useState } from 'react';
-import { FaPercentage } from "react-icons/fa";
 export default function DiningRestaruntList(){
 
     const[Diningdata,setDiningdata] = useState(DiningData);

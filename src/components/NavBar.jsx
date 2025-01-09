@@ -5,8 +5,10 @@ import { IoSearchSharp } from "react-icons/io5";
 import { IoFilterSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import classes from './NavBar.module.css'
+import { useSelector } from "react-redux"
 export default function Navbar(){
 
+    const selector = useSelector((state)=>state.Cart.items)
     return(
 
         <header>
@@ -21,7 +23,7 @@ export default function Navbar(){
                         <input alt="text" placeholder="Search for..."/>
                         <span><button><IoSearchSharp/></button></span>
                         <button className={classes.btn}><IoFilterSharp/></button>
-                        <button className={classes.btn}><IoBagHandle/></button>
+                       <Link to='/CheckOut'><button className={classes.btn}><IoBagHandle/>({selector.length})</button></Link>
                     </div>
                 </div>
             </nav>
