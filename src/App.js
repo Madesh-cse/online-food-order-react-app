@@ -18,6 +18,7 @@ import BestDeals from './pages/BestDeals';
 import UsedCoupons from './BestDeals/UsedCoupons';
 import RestaruntPageRoot from './pages/Restaruntpages';
 import Restarunt1 from './RestaruntPages/Restarunt1';
+import CartPage from './CartProduct/Cart';
 
 const router = createBrowserRouter([
 
@@ -37,6 +38,8 @@ const router = createBrowserRouter([
 
       {path:'Burger-King',element:<Restarunt1/>}
     ]},
+
+    {path:'CheckOut',element:<CartPage/>},
 
     {path:'explore', element:<ExploreRoot/>,children:[
 
