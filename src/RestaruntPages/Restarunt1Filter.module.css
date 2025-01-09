@@ -9,19 +9,32 @@
     padding: 20px;
 }
 .RestaruntCard{
-    width:320px;
-    height:360px;
+    width:340px;
+    height:400px;
     border: 1px solid transparent !important;
     margin-left: 40px;
-    background-color: #fff;
+    /* background-color: #fff; */
     border-radius: 5px;
+    padding:10px 10px 15px 10px;
+    /* border: 1px solid #000; */
+}
+
+.RestaruntCard:hover{
+    background-color: #fff;
+    box-shadow: 0 .125rem .25rem 0 rgba(58, 59, 69, .2) !important;
+    border-radius: 10px;
+    cursor: pointer;
 }
 .RestaruntCard img{
-    max-width: 100%;
-    height:auto;
+    width: 100%;
+    height:250px;
     object-fit: cover;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+}
+.Restaruntcontent{
+    display: flex;
+    justify-content: space-between;
 }
 .Restaruntcontent h4{
     font-size: 17px;
@@ -33,59 +46,55 @@
     color:grey;
     padding: 10px 0 0 10px
 }
-.Restaruntcontent h3{
-    font-size: 20px;
+.Restaruntcontent p{
+    font-size: 13px;
     font-family: sans-serif;
     font-weight: 500;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    padding: 10px 0 0 10px
+    padding: 5px;
+    margin-top: 10px;
+    background-color: rgb(14, 80, 32);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
 }
-.Rating{
+.RestaruntCusines{
     display: flex;
     justify-content: space-between;
-    padding: 15px 15px 0 15px;
+    margin-top: 10px;
 }
-.Rating span{
-    font-size: 11px;
-    padding-right: 10px;
-    /* color:#ffd700; */
-    color: #e84a3a;
+.RestaruntCusines h4{
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: 500;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color:grey;
+    padding: 10px 0 0 10px
 }
-.prices{
-    font-size: 20px;
-    /* color:#ffd700; */
-    color: #e84a3a;
+.RestaruntCusines p{
+    color: rgba(54, 54, 54, 0.607);
+    font-family: sans-serif;
+    font-weight: 500;
+    padding-top: 8px;
 }
-.cartbox{
-    margin-top: 5px;
-    margin-left: 10px;
-}
-.cartbox button{
-    padding:8px 10px;
-    border:1px solid #e84a3a;
-    background-color: #fff;
-    border-radius: 5px;
-    color: #e84a3a;
-    cursor: pointer;
-}
-.cartbox button:hover{
-    color:#fff;
-    background-color:  #c60021;
-}
-.FilterList{
-    padding: 20px;
-    font-size: 20px;
-}
-.FilterList ul{
+.cartBox{
     display: flex;
-    color: #000;
-    list-style-type: none;
-    margin-left: 40px;
+    justify-content: flex-end;
 }
-
-.FilterList li{
-    margin-right: 40px;
+.cartBox button{
+    margin-top: 10px;
+    background-color: transparent;
+    color: rgba(54, 54, 54, 0.607);
+    outline: none;
+    border:1px solid rgb(14, 80, 32);
+    padding: 8px 8px;
+    border-radius: 5px;
     cursor: pointer;
+}
+.cartBox button:hover{
+    background-color: rgb(14, 80, 32);
+    color: rgb(255, 255, 255);
 }

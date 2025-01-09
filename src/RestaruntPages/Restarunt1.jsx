@@ -1,5 +1,6 @@
 import classes from './Restarunt1.module.css'
-import Restarunt1Filter from './Restarunt1Filter';
+// import Restarunt1Filter from './Restarunt1Filter';
+import Recipes from './Restarunt1Filter';
 import logo from '../asset/RestaruntImg/burgerking.png'
 import { ImSpoonKnife } from "react-icons/im";
 import { MdDeliveryDining } from "react-icons/md";
@@ -39,7 +40,7 @@ export default function Restarunt1(){
                 </div>
             </div>
         </section>
-        <Restarunt1Filter/>
+        <Recipes/>
         </>
     )
 }
