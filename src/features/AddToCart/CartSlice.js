@@ -4,7 +4,10 @@ const initialState = {
 
     items:[],
     tempItem:[],
-    grantTotal:0
+    TotalItemCost:0,
+    handlingCharge:5,
+    grantTotal:0,
+
 }
 
 const CartSlice = createSlice({
@@ -25,14 +28,16 @@ const CartSlice = createSlice({
             }
 
             state.tempItem = {...state.items}
-            state.grantTotal = state.items.reduce((sum,item)=>sum+item.caloriesPerServing,0)
+            state.TotalItemCost = state.items.reduce((sum,item)=>sum+item.caloriesPerServing,0)
+            state.grantTotal = state.TotalItemCost + state.handlingCharge
 
             alert('Item is added')
         },
         removeItem(state,action){
             state.items = state.items.filter((item)=>item.id!==action.payload)
             state.tempItem = [{...state.items}]
-            state.grantTotal = state.items.reduce((sum,item)=>sum+item.caloriesPerServing,0)
+            state.TotalItemCost = state.items.reduce((sum,item)=>sum+item.caloriesPerServing,0)
+            state.grantTotal = state.TotalItemCost + state.handlingCharge
         }
     }
 })
