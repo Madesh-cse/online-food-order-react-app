@@ -6,7 +6,7 @@ import { removeItem } from '../features/AddToCart/CartSlice';
 
 export default function CartPage(){
 
-    const {items:cartItem,tempitem,grantTotal} = useSelector((state)=>state.Cart)
+    const {items:cartItem,tempitem,TotalItemCost,handlingCharge,grantTotal} = useSelector((state)=>state.Cart)
 
     useSelector((state)=>console.log(state))
 
@@ -30,9 +30,9 @@ export default function CartPage(){
                     </div>
                     <div className={classes.CartItemDetail}>
                         <div className={classes.CartTitle}>
-                           <h4>{item.name}</h4>
-                           <p>{item.cuisine}</p>
-                           <p><LiaRupeeSignSolid/>{item.caloriesPerServing}</p>
+                           <h4>{item.name.length>20?`${item.name.slice(0,20)}...`: item.name}</h4>
+                           <p>Cuisine:{item.cuisine}</p>
+                           <p> Price:<LiaRupeeSignSolid/>{item.caloriesPerServing}</p>
                         </div>
                     </div>
                     <div className={classes.updateBtn}>
@@ -41,7 +41,8 @@ export default function CartPage(){
                         <button>-</button>
                     </div>
                     <div className={classes.accesBtn}>
-                        <button onClick={()=>handleRemoveId(item.id)}>Remove</button>
+                        <button className={classes.updatebutton}>Update</button>
+                        <button className={classes.removeBtn}  onClick={()=>handleRemoveId(item.id)}>Remove</button>
                     </div>
                  </div>
                 ))}
@@ -51,7 +52,7 @@ export default function CartPage(){
              <div className="BillContent">
              <div className={classes.BillDetail}>
                 <p><PiNotepadFill />Items total</p>
-                <p>₹120</p>
+                <p>₹{TotalItemCost}</p>
              </div>
              <div className={classes.BillDetail}>
                 <p><PiNotepadFill />Delivery charge</p>
@@ -59,7 +60,7 @@ export default function CartPage(){
              </div>
              <div className={classes.BillDetail}>
                 <p><PiNotepadFill />Handling charge</p>
-                <p>₹5</p>
+                <p>₹{handlingCharge}</p>
              </div>
              </div>
              <div className={classes.TotalPrice}>

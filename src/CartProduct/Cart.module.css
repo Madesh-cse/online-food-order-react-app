@@ -8,7 +8,6 @@
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 2rem;
-  width: 100%;
   max-width: 1000px;
   margin: 5rem;
 }
@@ -19,28 +18,34 @@
     margin-top: 40px;
     max-width:100%;
     height:150px;
+    border-bottom: 1px solid #eee;
 }
 .CartImg img{
-  width:100px;
+  width:150px;
   height: 250px;
   object-fit: contain;
+  margin-bottom: 20px;
+}
+.CartTitle h4{
+  font-family: sans-serif;
+  font-weight: 700;
 }
 .CartTitle h1,p{
-  padding-top: 5px;
+  padding-top: 10px;
 }
 .updateBtn button{
     border:1px solid rgb(14, 80, 32);
-    padding: 8px 10px;
+    padding: 10px 10px;
     background-color: rgb(14, 80, 32);
     color: #fff;
-    font-size: 13px;
+    font-size: 11px;
 }
 .updateBtn span{
     border:1px solid rgb(14, 80, 32);
-    padding: 8px 10px;
+    padding: 10px 10px;
     background-color: rgb(14, 80, 32);
     color: #fff;
-    font-size: 13px;
+    font-size: 11px;
 }
 .BillDetail{
   display: flex;
@@ -51,4 +56,21 @@
   display: flex;
   justify-content: space-between;
   padding: 10px 10px 5px 0;
+}
+.updatebutton{
+  background-color: rgb(14, 80, 32);
+  color:#fff;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid rgb(14, 80, 32);;
+}
+.removeBtn{
+  margin-left: 30px;
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: #e74a3b !important;
+  color:#fff;
+  border:1px solid #e74a3b;
+  border-radius: 5px;
 }
