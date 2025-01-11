@@ -1,0 +1,88 @@
+.authenticationGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(min(100%,400px),1fr));
+}
+.backgroundImg{
+    background: url('../asset/RestaruntImg/banner-img.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size:cover;
+}
+
+.RegisterForm{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.RegisterBox{
+    width:450px;
+    height:auto;
+    /* border: 1px solid #000; */
+}
+.RegisterBox h2{
+    font-family: 'Circular Std Book', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color:#000;
+}
+.RegisterBox p{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #858796;
+    text-align: left;
+}
+input,label{
+    display: block;
+    margin-top: 5px;
+}
+.RegisterField{
+    display: flex;
+    padding-top: 40px;
+}
+.Nameicon{
+    margin-right: 20px;
+}
+.Nameicon p{
+    margin-top: 20px;
+    width:40px;
+    height:40px;
+    font-size: 14px;
+    background-color:#c0c0c014;
+    text-align: center;
+    /* border: 1px solid #c0c0c0; */
+    border-radius: 5px;
+}
+.Nameinput input{
+    width:300px;
+    height: 35px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    border-bottom: 1px solid #c0c0c0;
+}
+.Nameinput label{
+    font-size: 13px;
+    font-family: 700;
+    font-family: sans-serif;
+}
+.form button{
+    margin-top: 50px;
+    margin-left: 15px;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #e74a3b !important;
+    color:#fff;
+    border:1px solid #e74a3b;
+    cursor: pointer;
+}
+.LoginPage p{
+    text-align: center;
+}
+.LoginPage a{
+    color:#0000ff;
+    text-decoration: none;
+}
