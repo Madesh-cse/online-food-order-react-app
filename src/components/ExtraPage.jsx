@@ -1,4 +1,5 @@
 import classes from './ExtraPage.module.css'
+import { Link } from 'react-router-dom'
 export default function ExtraPageList(){
 
     return(
@@ -13,7 +14,7 @@ export default function ExtraPageList(){
             </ul>
             <h6 className={classes.title}>ACCOUNT</h6>
             <ul>
-                <li>Signin</li>
+               <Link to='Registration'><li>Signin</li></Link> 
                 <li>Signup</li>
                 <li>Forget Password</li>
             </ul>
