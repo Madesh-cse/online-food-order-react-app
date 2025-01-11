@@ -8,7 +8,7 @@ export const fetchFoodItem = createAsyncThunk('FoodItems/fetchFoodItems',async()
     const fetch_URL = await axios.get('https://dummyjson.com/recipes');
 
     return fetch_URL.data.recipes
-    // fetching a data from recipes which is a nested object and return as a array to a item=[]
+    // fetching a data from recipes which is a nested object and return  to a item=[] which is array
 })
 
 const ProductSlice = createSlice({
