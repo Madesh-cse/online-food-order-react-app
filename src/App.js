@@ -19,8 +19,13 @@ import UsedCoupons from './BestDeals/UsedCoupons';
 import RestaruntPageRoot from './pages/Restaruntpages';
 import Restarunt1 from './RestaruntPages/Restarunt1';
 import CartPage from './CartProduct/Cart';
+import Registation from './Authentication/Registation';
+import Login from './Authentication/Login';
 
 const router = createBrowserRouter([
+
+  {path:'Registration',element:<Registation/>},
+  {path:'Login',element:<Login/>},
 
   {path:'/', element:<RootLayout/>,children:[
 
@@ -69,7 +74,8 @@ const router = createBrowserRouter([
 
     ]}
 
-  ]}
+  ]},
+
 ]) 
 
 function App() {
