@@ -6,7 +6,7 @@ import { removeItem } from '../features/AddToCart/CartSlice';
 
 export default function CartPage(){
 
-    const {items:cartItem,tempitem,TotalItemCost,handlingCharge,grantTotal} = useSelector((state)=>state.Cart)
+    const {items:cartItem,TotalItemCost,handlingCharge,grantTotal} = useSelector((state)=>state.Cart)
 
     useSelector((state)=>console.log(state))
 
