@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": "365e",
+      "firstName": "madesh",
+      "Email": "mad@gmail.com",
+      "password": "123456",
+      "confirmPassword": "123456"
+    },
+    {
+      "id": "2775",
+      "firstName": "madesh",
+      "Email": "mad@gmail.com",
+      "password": "123456",
+      "confirmPassword": "123456"
+    },
+    {
+      "id": "42ab",
+      "firstName": "Madesh",
+      "Email": "madehmad@gmail.com",
+      "password": "madesh3",
+      "confirmPassword": "madesh3"
+    },
+    {
+      "id": "2de2",
+      "firstName": "naveen kumar",
+      "Email": "naveen@gmail.com",
+      "password": "naveen1",
+      "confirmPassword": "naveen1"
+    }
+  ]
+}
