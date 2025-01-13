@@ -4,6 +4,7 @@ import { useState } from "react"
 import SortBy from "./SortByComponent"
 import Cusines from "./CusinesComponent"
 import MoreFilter from "./MoreFilter"
+import RangeFilter from "./RangeFilter"
 
 
 const Modal = forwardRef(function ModalApp({title,buttonCaption},ref){
@@ -58,7 +59,7 @@ const Modal = forwardRef(function ModalApp({title,buttonCaption},ref){
                     </div>
                     <div className={classes.ModalContent1}>
                         {ModalContent === 3 ? <div>
-                            <h2>content3</h2>
+                           <RangeFilter/>
                         </div>:''}
                     </div>
                     <div className={classes.ModalContent1}>
