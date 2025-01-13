@@ -11,6 +11,7 @@
   padding: 2rem;
   background-color: #fff;
   overflow: hidden;
+  position: relative;
 
 }
 
@@ -178,6 +179,17 @@
     cursor: pointer;
 }
 
-/* .filter((cusineItem)=>{
-    return Cusines.toLowerCase() === '' ? cusineItem:cusineItem.name.toLowerCase().includes(Cusines)
-}) */
+.RangeFilter{
+    position:absolute;
+    top: 300px;
+    left: 80px;
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    visibility: visible;
+    overflow: auto;
+}
+.RangeFilter input[type='range']{
+    width:400px;
+}
