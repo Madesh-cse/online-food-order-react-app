@@ -92,6 +92,9 @@
     /* border: 2px solid red; */
    
 }
+.DeliveryRestarunt a{
+    text-decoration: none;
+}
 .DeliveryDiningCard:hover{
     background-color: #fff;
     box-shadow: 0 .125rem .25rem 0 rgba(58, 59, 69, .2) !important;
@@ -110,6 +113,7 @@
     padding: 5px;
 }
 .DeliveryDiningTitle h4{
+    color: #000;
     font-family: sans-serif;
     font-weight: 500;
 }
@@ -141,7 +145,7 @@
     justify-content: space-between;
     padding: 5px;
 }
-.DeliveryDiningDestination h4{
+.DeliveryDiningDestination h4,p{
     color: rgba(54, 54, 54, 0.607);
     font-family: sans-serif;
     font-weight: 500;

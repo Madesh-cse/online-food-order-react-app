@@ -38,9 +38,9 @@ const CartSlice = createSlice({
             state.tempItem = [{...state.items}]
             state.TotalItemCost = state.items.reduce((sum,item)=>sum+item.caloriesPerServing,0)
             state.grantTotal = state.TotalItemCost + state.handlingCharge
-        }
+        },
     }
 })
 
 export default CartSlice.reducer
-export const {AddItem,removeItem} = CartSlice.actions
+export const {AddItem,removeItem,orderItem} = CartSlice.actions
