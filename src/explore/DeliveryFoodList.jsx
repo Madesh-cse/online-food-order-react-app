@@ -2,6 +2,7 @@ import classes from './DeliveryPage.module.css'
 import { DeliveryFoodList } from './DeliveryData'
 import { LiaStarSolid } from "react-icons/lia";
 import { useState } from 'react'
+import { Link } from 'react-router-dom';
 export default function DeliveryFoodListItem(){
 
     const[data,setdata] = useState(DeliveryFoodList);
@@ -28,7 +29,8 @@ return(
     </div>
     <div className={classes.DeliveryRestarunt}>
         {data.map((item)=>(
-            <div className={classes.DeliveryDiningCard} key={item.id}>
+            <Link to={`/ProductDetails/${item.id}`} key={item.id}>
+             <div className={classes.DeliveryDiningCard}>
                 <img src={item.img} alt = ''/>
                 <div className={classes.DeliveryDiningTitle}>
                     <h4>{item.title}</h4>
@@ -43,6 +45,7 @@ return(
                     <p>{item.distance}</p>
                 </div>
             </div>
+            </Link>
         ))}
     </div>
     </>
