@@ -1,0 +1,9 @@
+.ProductDetailList{
+    padding-top: 40px;
+}
+.ProductItem{
+    width:800px;
+    height:200px;
+    border:1px solid #c0c0c0;
+
+}
