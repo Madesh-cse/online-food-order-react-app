@@ -3,6 +3,7 @@ import { LiaRupeeSignSolid } from "react-icons/lia";
 import { PiNotepadFill } from "react-icons/pi";
 import {useSelector,useDispatch} from 'react-redux'
 import { removeItem } from '../features/AddToCart/CartSlice';
+import { orderItem } from '../features/AddToCart/CartSlice';
 
 export default function CartPage(){
 
@@ -46,6 +47,7 @@ export default function CartPage(){
                     </div>
                  </div>
                 ))}
+                <button onClick={()=>dispatch(orderItem())}>order</button>
             </div>
             <div className={classes.BillBox}>
              <h1>Bill Details</h1>

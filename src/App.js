@@ -21,6 +21,7 @@ import Restarunt1 from './RestaruntPages/Restarunt1';
 import CartPage from './CartProduct/Cart';
 import Registation from './Authentication/Registation';
 import Login from './Authentication/Login';
+import ProductDetails from './ProductDetails/ProductDetails';
 
 const router = createBrowserRouter([
 
@@ -56,7 +57,9 @@ const router = createBrowserRouter([
 
     ]},
 
-    {path:'ExploreCatagories/:id',element:<Content/>},
+    {path:'ProductDetails/:productItemId',element:<ProductDetails/>},
+    
+    {path:'ExploreCatagories/:productId',element:<Content/>},
      
     {path:'collection', element:<CollectionPage/>,children:[
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import classes from './Modal.module.css'
+import classes from './RangeFilter.module.css'
 
 function RangeFilter() {
 
