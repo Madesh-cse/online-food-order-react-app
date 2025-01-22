@@ -102,7 +102,49 @@ export const DeliveryFoodList = [
         cusine:'Burger, Fast Food, Rolls',
         price:'₹200 for one',
         distance:'934m',
-        category:'Pure nonVeg'
+        category:'Pure nonVeg',
+        product:[
+            {
+            id:1,
+            title:'2 pc Hot & Crispy Chicken',
+            price:'₹250',
+            type:'Non-Veg',
+            signature:'Signature Hot & cripsy Chicken',
+            image:'https://b.zmtcdn.com/data/dish_photos/99f/72242c3ef1e98f4a12621216aa3e099f.jpeg?fit=around|130:130&crop=130:130;*,*',
+            },
+            {
+            id:2,
+            title:'2 pcs Smoky Red Chicken',
+            price:'₹179',
+            type:'Non-Veg',
+            signature:'Savour 2 pieces of KFC Smoky Red Chicken- Hot Grilled Chicken Leg Piece!',
+            image:'https://b.zmtcdn.com/data/dish_photos/03b/7b7c6bd499b57f6eca3817fcada5003b.jpeg?fit=around|130:130&crop=130:130;*,*'
+            },
+            {
+            id:3,
+            title:'4pc Hot Chicken Wings',
+            price:'₹250',
+            signature:'Seasoned,Signature KFC chicken wings',
+            type:'Non-Veg',
+            image:'https://b.zmtcdn.com/data/dish_photos/054/7c1c9c67d06e7d1b765096abc58f2054.jpeg?fit=around|130:130&crop=130:130;*,*'
+            },
+            {
+            id:4,
+            title:'Stay Home Bucket',
+            price:'₹1055.24',
+            signature:'Save 21% on 4 Hot & Crispy, 4 Wings, 6 Peri Strips & 2 dips (20gm each)',
+            type:'Non-Veg',
+            image:'https://b.zmtcdn.com/data/dish_photos/6d9/02cfeb5cb79a5372c40a249451e0a6d9.jpeg?fit=around|130:130&crop=130:130;*,*'
+            },
+            {
+            id:5,
+            title:'Peri Peri 10 Leg pc & 4 Dips',
+            price:'₹1266.67',
+            signature:'Leg before any wicket! Save 27% on 10 Peri Peri Leg Pieces & 4 Dips (20 gm each)',
+            type:'Non-Veg',
+            image:'https://b.zmtcdn.com/data/dish_photos/b9a/842a22d5db7b13febcfaf08385ba2b9a.jpeg?fit=around|130:130&crop=130:130;*,*'
+            },
+        ],
     },
     {
         id:2,
@@ -112,7 +154,27 @@ export const DeliveryFoodList = [
         cusine:'Burger, Fast Food, Rolls',
         price:'₹200 for one',
         distance:'934m',
-        category:'Pure nonVeg'
+        category:'Pure nonVeg',
+        product:[
+            {
+            title:'Boneless Fried Chicken Basket (Save 35%)',
+            price:'₹149',
+            signature:'Signature Hot & cripsy Chicken',
+            image:'https://b.zmtcdn.com/data/dish_photos/036/31e90935163b0704aea4abd388c11036.jpeg?fit=around|130:130&crop=130:130;*,*',
+            },
+            {
+            title:'Boneless Fried Chicken Basket (Save 35%)',
+            price:'₹149',
+            signature:'Signature Hot & cripsy Chicken',
+            image:'https://b.zmtcdn.com/data/dish_photos/829/7602a3d88b2aeb0053954d96be9a9829.jpeg?fit=around|130:130&crop=130:130;*,*'
+            },
+            {
+            title:'Boneless Fried Chicken Basket (Save 35%)',
+            price:'₹149',
+            signature:'Signature Hot & cripsy Chicken',
+            image:'https://b.zmtcdn.com/data/dish_photos/328/80355befb12f52c22eb75c6f865ca328.jpeg?fit=around|130:130&crop=130:130;*,*'
+            },
+        ],
 
     },
     {
@@ -123,7 +185,44 @@ export const DeliveryFoodList = [
         cusine:'Burger, Fast Food, Rolls',
         price:'₹200 for one',
         distance:'934m',
-        category:'Briyani'
+        category:'Briyani',
+        product:[
+            {
+                id:1,
+                title:'Hyderabadi Chicken Dum Biryani',
+                price:'₹299',
+                signature:'Hyderabadi chicken dum biryani.',
+                image:'https://b.zmtcdn.com/data/dish_photos/41f/e0e9e1e1a701d9d516c7b60d29afa41f.jpeg?fit=around|130:130&crop=130:130;*,*',
+            },
+            {
+                id:2,
+                title:'Egg Biryani',
+                price:'₹250',
+                signature:'Aromatic basmati rice cooked in spices with scrambled eggs.',
+                image:'https://b.zmtcdn.com/data/dish_photos/f1e/d8cc2acfe33379a94b91c22571827f1e.jpeg?fit=around|130:130&crop=130:130;*,*',
+            },
+            {
+                id:3,
+                title:'Hyderabadi Mutton Dum Biryani',
+                price:'₹399',
+                signature:'Aromatic basmati rice cooked in spices with scrambled eggs.',
+                image:'https://b.zmtcdn.com/data/dish_photos/2c7/b3c176256248a561956d05a062cb22c7.jpeg?fit=around|130:130&crop=130:130;*,*',
+            },
+            {
+                id:4,
+                title:'Chicken 65 (Bone)',
+                price:'₹299',
+                signature:'Signature Hot & cripsy Chicken',
+                image:'https://b.zmtcdn.com/data/dish_photos/8a5/d6008c30af1fe2fe438b33fdb2e8c8a5.jpeg?fit=around|130:130&crop=130:130;*,*',
+            },
+            {
+                id:5,
+                title:'Hyderabadi Mutton Dum Biryani',
+                price:'₹399',
+                signature:'Spicy deep fried chicken chunks prepared with green chillies, yogurt, curry leaves, salt ... read more',
+                image:'https://b.zmtcdn.com/data/dish_photos/2c7/b3c176256248a561956d05a062cb22c7.jpeg?fit=around|130:130&crop=130:130;*,*',
+            },
+        ]
     },
     {
         id:4,
@@ -234,7 +333,49 @@ export const DeliveryFoodList = [
         cusine:'Burger, Fast Food, Rolls',
         price:'₹200 for one',
         distance:'934m',
-        category:'Briyani'
+        category:'Briyani',
+        product:[
+            {
+            id:1,
+            title:'ThalappaKatti Chicken 65 Briyani',
+            price:'₹325',
+            type:'Non-Veg',
+            signature:'Signature Hot & ThalappaKatti Chicken 65 Briyani',
+            image:'https://thalappakatti.com/wp-content/uploads/2017/01/thalappakatti-chicken-65-biriyani-1.jpg',
+            },
+            {
+            id:2,
+            title:'ThalappaKatti Chicken Briyani',
+            price:'₹305',
+            type:'Non-Veg',
+            signature:'ThalappaKatti Chicken Briyani',
+            image:'https://thalappakatti.com/wp-content/uploads/2017/01/thalappakatti-chicken-biriyani-.jpg'
+            },
+            {
+            id:3,
+            title:'Black Pepper Chicken (boneless)',
+            price:'₹365',
+            signature:'Seasoned,Signature Black Pepper Chicken',
+            type:'Non-Veg',
+            image:'https://thalappakatti.com/wp-content/uploads/cache/2017/01/mutton-liver-roast-1/1344966125.jpg'
+            },
+            {
+            id:4,
+            title:'Chicken 65',
+            price:'₹295',
+            signature:'Chicken 65 (20gm each)',
+            type:'Non-Veg',
+            image:'https://thalappakatti.com/wp-content/uploads/cache/2017/01/chicken-65/3120730722.jpg'
+            },
+            {
+            id:5,
+            title:'Fish Fry',
+            price:'₹300',
+            signature:'Leg before any wicket! Save 27% on 10 Peri Peri Leg Pieces & 4 Dips (20 gm each)',
+            type:'Non-Veg',
+            image:'https://thalappakatti.com/wp-content/uploads/cache/2017/01/seer-fish-fry/3462914600.jpg'
+            },
+        ],
     },
     {
         id:15,

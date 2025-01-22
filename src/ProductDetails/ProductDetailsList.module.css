@@ -1,9 +1,61 @@
 .ProductDetailList{
-    padding-top: 40px;
+    padding-top: 50px;
 }
-.ProductItem{
+.ProductCard{
     width:800px;
-    height:200px;
+    height:240px;
     border:1px solid #c0c0c0;
-
+    border-left: none;
+    border-right: none;
+    margin-top: 30px;
+    padding: 20px;
+}
+.arrow{
+    border:1px solid  #e74a3b !important;
+    margin-top: 20px;
+    font-size: 8px;
+    padding: 3px;
+    color:#e74a3b;
+}
+.productListFlex{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.ProductImg img{
+    width:100%;
+    height:150px;
+    object-fit: cover;
+}
+.TypeFood{
+    display: flex;
+}
+.TypeFood p{
+    margin-top: 10px;
+    margin-left: 6px;
+}
+.discount{
+    color:darkgrey
+}
+.priceAmount{
+    color:#0000ff;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+.priceAmount del{
+    margin-right: 30px;
+}
+.ProductImg {
+    position: relative;
+}
+.ProductImg button{
+    position: absolute;
+    bottom: -10px;
+    left:20px;
+    padding: 5px 35px;
+    font-size: 20px;
+    border:1px solid #e74a3b;
+    color:#e74a3b;
+    background-color:#fff;
+    border-radius: 10px;
 }
