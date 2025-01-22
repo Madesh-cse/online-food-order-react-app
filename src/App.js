@@ -22,6 +22,7 @@ import CartPage from './CartProduct/Cart';
 import Registation from './Authentication/Registation';
 import Login from './Authentication/Login';
 import ProductDetails from './ProductDetails/ProductDetails';
+import OrderDetails from './orderDetails/OrderDetails';
 
 const router = createBrowserRouter([
 
@@ -46,6 +47,8 @@ const router = createBrowserRouter([
     ]},
 
     {path:'CheckOut',element:<CartPage/>},
+
+    {path:'OrderDetails',element:<OrderDetails/>},
 
     {path:'explore', element:<ExploreRoot/>,children:[
 

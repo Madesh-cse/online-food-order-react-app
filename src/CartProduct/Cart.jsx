@@ -3,13 +3,18 @@ import { LiaRupeeSignSolid } from "react-icons/lia";
 import { PiNotepadFill } from "react-icons/pi";
 import {useSelector,useDispatch} from 'react-redux'
 import { removeItem } from '../features/AddToCart/CartSlice';
-import { orderItem } from '../features/AddToCart/CartSlice';
-
+import { updateTempQuantity } from '../features/AddToCart/CartSlice';
+import { setOrderDetails } from '../features/AddToCart/CartSlice';
+import { useNavigate } from 'react-router-dom';
 export default function CartPage(){
 
-    const {items:cartItem,TotalItemCost,handlingCharge,grantTotal} = useSelector((state)=>state.Cart)
+    const {items:cartItem,TotalItemCost,handlingCharge,grantTotal,tempItem} = useSelector((state)=>state.Cart)
+
+    console.log(tempItem)
 
     useSelector((state)=>console.log(state))
+
+    const naviagte = useNavigate()
 
     const dispatch = useDispatch()
 
@@ -18,6 +23,19 @@ export default function CartPage(){
         dispatch(removeItem(id)) // id=>is a payload data for action    
     }
 
+    const handleUpdateQuantity = (id,quantity)=>{
+
+        dispatch(updateTempQuantity({
+           type: 'updateTempQuantity',
+           payload:{id,quantity}
+        })) // id and quantity are payload
+    }
+
+    const handleOrder = ()=>{
+        dispatch(setOrderDetails(cartItem))
+        naviagte('/OrderDetails')
+
+    }
 
     return(
         <>
@@ -25,7 +43,7 @@ export default function CartPage(){
             <div className={classes.CartBox}>
                 <h1>Order Your Favrouit Food</h1>
                 {cartItem.map((item)=>(
-                 <div className={classes.CartComponent}>
+                 <div className={classes.CartComponent} key={item.id}>
                     <div className={classes.CartImg}>
                       <img src={item.image} alt="title" />
                     </div>
@@ -37,9 +55,7 @@ export default function CartPage(){
                         </div>
                     </div>
                     <div className={classes.updateBtn}>
-                        <button>+</button>
-                        <span>0</span>
-                        <button>-</button>
+                        <input type="number" min='1' value={tempItem.find((tempsItem)=>tempsItem.id === item.id)?.quantity||item.quantity} onChange={(e)=>handleUpdateQuantity(item.id,parseInt(e.target.value,10))} />
                     </div>
                     <div className={classes.accesBtn}>
                         <button className={classes.updatebutton}>Update</button>
@@ -47,7 +63,7 @@ export default function CartPage(){
                     </div>
                  </div>
                 ))}
-                <button onClick={()=>dispatch(orderItem())}>order</button>
+                <button onClick={handleOrder}>order</button>
             </div>
             <div className={classes.BillBox}>
              <h1>Bill Details</h1>

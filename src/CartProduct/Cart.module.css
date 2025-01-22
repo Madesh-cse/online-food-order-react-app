@@ -33,20 +33,10 @@
 .CartTitle h1,p{
   padding-top: 10px;
 }
-.updateBtn button{
-    border:1px solid rgb(14, 80, 32);
-    padding: 10px 10px;
-    background-color: rgb(14, 80, 32);
-    color: #fff;
-    font-size: 11px;
+.updateBtn input{
+  width:40px;
 }
-.updateBtn span{
-    border:1px solid rgb(14, 80, 32);
-    padding: 10px 10px;
-    background-color: rgb(14, 80, 32);
-    color: #fff;
-    font-size: 11px;
-}
+
 .BillDetail{
   display: flex;
   justify-content: space-between;
