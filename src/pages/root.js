@@ -1,8 +1,8 @@
 import { Outlet } from 'react-router-dom';
 import Navbar from '../components/NavBar.jsx'
 import Sidebar from '../components/Sidebar.jsx'
-
-
+import AccordionContent from '../components/AccordionContent'
+import Footer from "../components/Footer";
 function RootLayout() {
 
   return (
@@ -11,6 +11,8 @@ function RootLayout() {
         <Sidebar/>
         <Navbar/>
         <Outlet />
+        <AccordionContent/>
+        <Footer/>
       </main>
     </>
   );

@@ -1,7 +1,5 @@
 import { Outlet } from "react-router-dom";
 import BestCoupons from "../BestDeals/NewCoupons";
-import Footer from "../components/Footer";
-import AccordionContent from "../components/AccordionContent";
 
 export default function BestDeals(){
 
@@ -9,8 +7,6 @@ export default function BestDeals(){
         <>
         <BestCoupons/>
         <Outlet/>
-        <AccordionContent/>
-        <Footer/>
         </>
     )
 }
