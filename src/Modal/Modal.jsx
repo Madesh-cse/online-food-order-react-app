@@ -1,13 +1,17 @@
 import { forwardRef} from "react"
 import classes from './Modal.module.css'
 import { useState } from "react"
+import { useRef } from "react"
+import {useImperativeHandle} from 'react'
 import SortBy from "./SortByComponent"
 import Cusines from "./CusinesComponent"
 import MoreFilter from "./MoreFilter"
 import RangeFilter from "./RangeFilter"
 
 
-const Modal = forwardRef(function ModalApp({title,buttonCaption},ref){
+const Modal = forwardRef(function ModalApp({title},ref){
+
+    const dialogRef = useRef(null)
 
     const [ModalContent,setModalContent] = useState(1)
 
@@ -21,17 +25,29 @@ const Modal = forwardRef(function ModalApp({title,buttonCaption},ref){
     }
 
     function HandleCount(){
-            setCount((PrevState)=>PrevState+1)
-
+        setCount((PrevState)=>PrevState+1)
     }
 
+    useImperativeHandle(ref,()=>({
+
+        openModal:()=>{
+            if(dialogRef.current){
+                dialogRef.current.showModal()
+            }
+        },
+        closeModal:()=>{
+            if(dialogRef.current){
+                dialogRef.current.close()
+            }
+        }
+    }))
 
     return(
         <>
-          <dialog className={classes.FilterModal} ref={ref} >
+          <dialog className={classes.FilterModal} ref={dialogRef} >
             <div className={classes.ModalTitle}>
              <h2>{title}</h2>
-             <button>{buttonCaption}</button>
+             <button onClick={()=>dialogRef.current.close()}>X</button>
             </div>
             <hr className={classes.modalline}/>
             <div className={classes.ModalContentTab}>
