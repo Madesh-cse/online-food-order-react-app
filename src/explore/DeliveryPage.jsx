@@ -8,7 +8,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Modal from '../Modal/Modal';
 import { useRef } from 'react';
-import { useState } from 'react';
 export default function DeliveryPage(){
 
     function SampleNextArrow(props) {
@@ -45,27 +44,12 @@ export default function DeliveryPage(){
 
       const modal = useRef()
 
-      function HandleModel(){
-        modal.current.showModal()
-        console.log('Madesh')
-      }
-
-
-      const[close,setclose] = useState(false)
-
-      function HandleCloseEvent(){
-
-        setclose(true)
-        console.log('close')
-      }
-
-      
     return(
       <>
-      <Modal title='FILTER' ref={modal} HandleClose={HandleCloseEvent}  close={close}/>
+      <Modal title='FILTER' ref={modal}/>
       <section className={classes.DeliveryPage}>
             <div className={classes.Delivery}>
-                <button onClick={HandleModel}><span><IoFilterSharp/></span>Filters</button>
+                <button onClick={(()=>modal.current.openModal())}><span><IoFilterSharp/></span>Filters</button>
             </div>
             <div className={classes.DeliveryOrder}>
                 <h2>Inspiration for your first order</h2>
