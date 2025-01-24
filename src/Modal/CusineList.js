@@ -122,6 +122,10 @@ export const CusineData = [
     },
     {
         id:31,
+        name:'Briyani'
+    },
+    {
+        id:32,
         name:'Chinese'
     }
 
