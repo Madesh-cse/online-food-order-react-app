@@ -27,6 +27,13 @@
       "Email": "naveen@gmail.com",
       "password": "naveen1",
       "confirmPassword": "naveen1"
+    },
+    {
+      "id": "fb53",
+      "firstName": "Madesh",
+      "Email": "madesh12@gmail.com",
+      "password": "madesh",
+      "confirmPassword": "madesh"
     }
   ]
 }
