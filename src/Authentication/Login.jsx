@@ -44,25 +44,24 @@ function Login() {
             validateError.password ='Password length atleast 8 character'
         }
 
-        axios.get('http://localhost:9000/users')
+        if(isValidate){
+            axios.get('http://localhost:9000/users')
          .then((userdata)=>{
-            userdata.data.map((data)=>{
 
-                if(data.Email === userData.Email){
+           const user = userdata.data.find((data)=>
+            data.Email === userData.Email && data.password === userData.password)
 
-                    if(data.password === userData.password){
-                        alert('Login Successfull')
-                        navigate('/')
-                    }
-                    else{
-                        isValidate = false
-                        validateError.password = 'Wrong password'
-                      }
-                }
-            })
+           if(user){
+            alert('login succesfully')
+            localStorage.setItem("user",JSON.stringify(user))
+            navigate('/')
+           }
+           else{
             seterror(validateError)
             setuserValidate(isValidate)
+           }
          })
+        }  
     }
 
   return (
