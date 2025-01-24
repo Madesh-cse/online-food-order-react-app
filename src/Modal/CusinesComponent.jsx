@@ -25,8 +25,10 @@ export default function Cusines({HandleCount}){
                 }).map((item)=>(
                     <div className={classes.CusinesCheck} id={item.id}>
                         <div className={classes.CusinesFlex}>
-                           <input type="checkbox"  onClick={HandleCount} id='Popularity' name='Popularity' value='Popularity' />
-                           <label htmlFor="">{item.name}</label> 
+                           <label htmlFor="">
+                             <input type="checkbox"  onClick={HandleCount} id='Popularity' name={item.name} value='Popularity' />
+                             {item.name}
+                            </label> 
                         </div>
                     </div>
                 ))}
