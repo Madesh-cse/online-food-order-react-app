@@ -1,6 +1,16 @@
 .ProductDetailList{
+    position: relative;
     padding-top: 50px;
 }
+/* .advertisment{
+    position: fixed;
+    top:300px;
+    right:50px;
+}
+.advertisment img{
+    width:300px;
+    height:auto;
+} */
 .ProductCard{
     width:800px;
     height:240px;
