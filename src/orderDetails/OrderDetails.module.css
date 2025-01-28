@@ -1,3 +1,80 @@
-.orderDetail{
-    margin-left: 226px;
+.OrderSuccessfull{
+    margin-left:80px;
+    margin-top: 50px;
+}
+.DeliveryRestarunt{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(min(100%,340px),1fr));
+    gap: 45px;
+    margin-top: 50px;
+}
+.DeliveryDiningCard{
+    width:340px;
+    margin-right: 30px;
+    padding:10px 12px 15px 8px;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+}
+.favorite{
+    top:20px;
+    right:30px;
+    padding: 5px;
+}
+.DeliveryRestarunt a{
+    text-decoration: none;
+}
+.DeliveryDiningCard:hover{
+    background-color: #fff;
+    box-shadow: 0 .125rem .25rem 0 rgba(58, 59, 69, .2) !important;
+    /* border-radius: 10px; */
+    cursor: pointer;
+}
+.DeliveryDiningCard img{
+    width: 320px;
+    height:250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.DeliveryDiningTitle{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.DeliveryDiningTitle h4{
+    color: #000;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.DeliveryDiningTitle p{
+    background-color: rgb(14, 80, 32);
+    color: rgb(255, 255, 255);
+    padding:3px 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(14, 80, 32);
+    font-size: 13px;
+}
+.DeliveryDiningCusine{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.DeliveryDiningCusine h4{
+    color: rgba(54, 54, 54, 0.607);
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.DeliveryDiningCusine p{
+    color: rgba(54, 54, 54, 0.607);
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.DeliveryDiningDestination{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.DeliveryDiningDestination h4,p{
+    color: rgba(54, 54, 54, 0.607);
+    font-family: sans-serif;
+    font-weight: 500;
 }
