@@ -90,7 +90,11 @@
     margin-right: 30px;
     padding:10px 12px 15px 8px;
     /* border: 2px solid red; */
-   
+}
+.favorite{
+    top:20px;
+    right:30px;
+    padding: 5px;
 }
 .DeliveryRestarunt a{
     text-decoration: none;

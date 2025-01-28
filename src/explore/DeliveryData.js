@@ -232,7 +232,49 @@ export const DeliveryFoodList = [
         cusine:'Burger, Fast Food, Rolls',
         price:'₹200 for one',
         distance:'934m',
-        category:'Pure nonVeg'
+        category:'Pure nonVeg',
+        product:[
+            {
+            id:1,
+            title:'2 pc Hot & Crispy Chicken',
+            price:'₹250',
+            type:'Non-Veg',
+            signature:'Signature Hot & cripsy Chicken',
+            image:'https://b.zmtcdn.com/data/dish_photos/99f/72242c3ef1e98f4a12621216aa3e099f.jpeg?fit=around|130:130&crop=130:130;*,*',
+            },
+            {
+            id:2,
+            title:'2 pcs Smoky Red Chicken',
+            price:'₹179',
+            type:'Non-Veg',
+            signature:'Savour 2 pieces of KFC Smoky Red Chicken- Hot Grilled Chicken Leg Piece!',
+            image:'https://b.zmtcdn.com/data/dish_photos/03b/7b7c6bd499b57f6eca3817fcada5003b.jpeg?fit=around|130:130&crop=130:130;*,*'
+            },
+            {
+            id:3,
+            title:'4pc Hot Chicken Wings',
+            price:'₹250',
+            signature:'Seasoned,Signature KFC chicken wings',
+            type:'Non-Veg',
+            image:'https://b.zmtcdn.com/data/dish_photos/054/7c1c9c67d06e7d1b765096abc58f2054.jpeg?fit=around|130:130&crop=130:130;*,*'
+            },
+            {
+            id:4,
+            title:'Stay Home Bucket',
+            price:'₹1055.24',
+            signature:'Save 21% on 4 Hot & Crispy, 4 Wings, 6 Peri Strips & 2 dips (20gm each)',
+            type:'Non-Veg',
+            image:'https://b.zmtcdn.com/data/dish_photos/6d9/02cfeb5cb79a5372c40a249451e0a6d9.jpeg?fit=around|130:130&crop=130:130;*,*'
+            },
+            {
+            id:5,
+            title:'Peri Peri 10 Leg pc & 4 Dips',
+            price:'₹1266.67',
+            signature:'Leg before any wicket! Save 27% on 10 Peri Peri Leg Pieces & 4 Dips (20 gm each)',
+            type:'Non-Veg',
+            image:'https://b.zmtcdn.com/data/dish_photos/b9a/842a22d5db7b13febcfaf08385ba2b9a.jpeg?fit=around|130:130&crop=130:130;*,*'
+            },
+        ],
     },
     {
         id:5,
@@ -242,7 +284,49 @@ export const DeliveryFoodList = [
         cusine:'Burger, Fast Food, Rolls',
         price:'₹200 for one',
         distance:'934m',
-        category:'Pure Veg'
+        category:'Pure Veg',
+        product:[
+            {
+            id:1,
+            title:'2 pc Hot & Crispy Chicken',
+            price:'₹250',
+            type:'Non-Veg',
+            signature:'Signature Hot & cripsy Chicken',
+            image:'https://b.zmtcdn.com/data/dish_photos/99f/72242c3ef1e98f4a12621216aa3e099f.jpeg?fit=around|130:130&crop=130:130;*,*',
+            },
+            {
+            id:2,
+            title:'2 pcs Smoky Red Chicken',
+            price:'₹179',
+            type:'Non-Veg',
+            signature:'Savour 2 pieces of KFC Smoky Red Chicken- Hot Grilled Chicken Leg Piece!',
+            image:'https://b.zmtcdn.com/data/dish_photos/03b/7b7c6bd499b57f6eca3817fcada5003b.jpeg?fit=around|130:130&crop=130:130;*,*'
+            },
+            {
+            id:3,
+            title:'4pc Hot Chicken Wings',
+            price:'₹250',
+            signature:'Seasoned,Signature KFC chicken wings',
+            type:'Non-Veg',
+            image:'https://b.zmtcdn.com/data/dish_photos/054/7c1c9c67d06e7d1b765096abc58f2054.jpeg?fit=around|130:130&crop=130:130;*,*'
+            },
+            {
+            id:4,
+            title:'Stay Home Bucket',
+            price:'₹1055.24',
+            signature:'Save 21% on 4 Hot & Crispy, 4 Wings, 6 Peri Strips & 2 dips (20gm each)',
+            type:'Non-Veg',
+            image:'https://b.zmtcdn.com/data/dish_photos/6d9/02cfeb5cb79a5372c40a249451e0a6d9.jpeg?fit=around|130:130&crop=130:130;*,*'
+            },
+            {
+            id:5,
+            title:'Peri Peri 10 Leg pc & 4 Dips',
+            price:'₹1266.67',
+            signature:'Leg before any wicket! Save 27% on 10 Peri Peri Leg Pieces & 4 Dips (20 gm each)',
+            type:'Non-Veg',
+            image:'https://b.zmtcdn.com/data/dish_photos/b9a/842a22d5db7b13febcfaf08385ba2b9a.jpeg?fit=around|130:130&crop=130:130;*,*'
+            },
+        ],
     },
     {
         id:6,
@@ -252,7 +336,49 @@ export const DeliveryFoodList = [
         cusine:'Burger, Fast Food, Rolls',
         price:'₹200 for one',
         distance:'934m',
-         category:'Pure Veg'
+         category:'Pure Veg',
+         product:[
+            {
+            id:1,
+            title:'2 pc Hot & Crispy Chicken',
+            price:'₹250',
+            type:'Non-Veg',
+            signature:'Signature Hot & cripsy Chicken',
+            image:'https://b.zmtcdn.com/data/dish_photos/99f/72242c3ef1e98f4a12621216aa3e099f.jpeg?fit=around|130:130&crop=130:130;*,*',
+            },
+            {
+            id:2,
+            title:'2 pcs Smoky Red Chicken',
+            price:'₹179',
+            type:'Non-Veg',
+            signature:'Savour 2 pieces of KFC Smoky Red Chicken- Hot Grilled Chicken Leg Piece!',
+            image:'https://b.zmtcdn.com/data/dish_photos/03b/7b7c6bd499b57f6eca3817fcada5003b.jpeg?fit=around|130:130&crop=130:130;*,*'
+            },
+            {
+            id:3,
+            title:'4pc Hot Chicken Wings',
+            price:'₹250',
+            signature:'Seasoned,Signature KFC chicken wings',
+            type:'Non-Veg',
+            image:'https://b.zmtcdn.com/data/dish_photos/054/7c1c9c67d06e7d1b765096abc58f2054.jpeg?fit=around|130:130&crop=130:130;*,*'
+            },
+            {
+            id:4,
+            title:'Stay Home Bucket',
+            price:'₹1055.24',
+            signature:'Save 21% on 4 Hot & Crispy, 4 Wings, 6 Peri Strips & 2 dips (20gm each)',
+            type:'Non-Veg',
+            image:'https://b.zmtcdn.com/data/dish_photos/6d9/02cfeb5cb79a5372c40a249451e0a6d9.jpeg?fit=around|130:130&crop=130:130;*,*'
+            },
+            {
+            id:5,
+            title:'Peri Peri 10 Leg pc & 4 Dips',
+            price:'₹1266.67',
+            signature:'Leg before any wicket! Save 27% on 10 Peri Peri Leg Pieces & 4 Dips (20 gm each)',
+            type:'Non-Veg',
+            image:'https://b.zmtcdn.com/data/dish_photos/b9a/842a22d5db7b13febcfaf08385ba2b9a.jpeg?fit=around|130:130&crop=130:130;*,*'
+            },
+        ],
     },
     {
         id:7,
@@ -262,7 +388,49 @@ export const DeliveryFoodList = [
         cusine:'Burger, Fast Food, Rolls',
         price:'₹200 for one',
         distance:'934m',
-        category:'Pure nonVeg'
+        category:'Pure nonVeg',
+        product:[
+            {
+            id:1,
+            title:'2 pc Hot & Crispy Chicken',
+            price:'₹250',
+            type:'Non-Veg',
+            signature:'Signature Hot & cripsy Chicken',
+            image:'https://b.zmtcdn.com/data/dish_photos/99f/72242c3ef1e98f4a12621216aa3e099f.jpeg?fit=around|130:130&crop=130:130;*,*',
+            },
+            {
+            id:2,
+            title:'2 pcs Smoky Red Chicken',
+            price:'₹179',
+            type:'Non-Veg',
+            signature:'Savour 2 pieces of KFC Smoky Red Chicken- Hot Grilled Chicken Leg Piece!',
+            image:'https://b.zmtcdn.com/data/dish_photos/03b/7b7c6bd499b57f6eca3817fcada5003b.jpeg?fit=around|130:130&crop=130:130;*,*'
+            },
+            {
+            id:3,
+            title:'4pc Hot Chicken Wings',
+            price:'₹250',
+            signature:'Seasoned,Signature KFC chicken wings',
+            type:'Non-Veg',
+            image:'https://b.zmtcdn.com/data/dish_photos/054/7c1c9c67d06e7d1b765096abc58f2054.jpeg?fit=around|130:130&crop=130:130;*,*'
+            },
+            {
+            id:4,
+            title:'Stay Home Bucket',
+            price:'₹1055.24',
+            signature:'Save 21% on 4 Hot & Crispy, 4 Wings, 6 Peri Strips & 2 dips (20gm each)',
+            type:'Non-Veg',
+            image:'https://b.zmtcdn.com/data/dish_photos/6d9/02cfeb5cb79a5372c40a249451e0a6d9.jpeg?fit=around|130:130&crop=130:130;*,*'
+            },
+            {
+            id:5,
+            title:'Peri Peri 10 Leg pc & 4 Dips',
+            price:'₹1266.67',
+            signature:'Leg before any wicket! Save 27% on 10 Peri Peri Leg Pieces & 4 Dips (20 gm each)',
+            type:'Non-Veg',
+            image:'https://b.zmtcdn.com/data/dish_photos/b9a/842a22d5db7b13febcfaf08385ba2b9a.jpeg?fit=around|130:130&crop=130:130;*,*'
+            },
+        ],
     },
     {
         id:8,
@@ -272,7 +440,49 @@ export const DeliveryFoodList = [
         cusine:'Burger, Fast Food, Rolls',
         price:'₹200 for one',
         distance:'934m',
-        category:'Briyani'
+        category:'Briyani',
+        product:[
+            {
+            id:1,
+            title:'2 pc Hot & Crispy Chicken',
+            price:'₹250',
+            type:'Non-Veg',
+            signature:'Signature Hot & cripsy Chicken',
+            image:'https://b.zmtcdn.com/data/dish_photos/99f/72242c3ef1e98f4a12621216aa3e099f.jpeg?fit=around|130:130&crop=130:130;*,*',
+            },
+            {
+            id:2,
+            title:'2 pcs Smoky Red Chicken',
+            price:'₹179',
+            type:'Non-Veg',
+            signature:'Savour 2 pieces of KFC Smoky Red Chicken- Hot Grilled Chicken Leg Piece!',
+            image:'https://b.zmtcdn.com/data/dish_photos/03b/7b7c6bd499b57f6eca3817fcada5003b.jpeg?fit=around|130:130&crop=130:130;*,*'
+            },
+            {
+            id:3,
+            title:'4pc Hot Chicken Wings',
+            price:'₹250',
+            signature:'Seasoned,Signature KFC chicken wings',
+            type:'Non-Veg',
+            image:'https://b.zmtcdn.com/data/dish_photos/054/7c1c9c67d06e7d1b765096abc58f2054.jpeg?fit=around|130:130&crop=130:130;*,*'
+            },
+            {
+            id:4,
+            title:'Stay Home Bucket',
+            price:'₹1055.24',
+            signature:'Save 21% on 4 Hot & Crispy, 4 Wings, 6 Peri Strips & 2 dips (20gm each)',
+            type:'Non-Veg',
+            image:'https://b.zmtcdn.com/data/dish_photos/6d9/02cfeb5cb79a5372c40a249451e0a6d9.jpeg?fit=around|130:130&crop=130:130;*,*'
+            },
+            {
+            id:5,
+            title:'Peri Peri 10 Leg pc & 4 Dips',
+            price:'₹1266.67',
+            signature:'Leg before any wicket! Save 27% on 10 Peri Peri Leg Pieces & 4 Dips (20 gm each)',
+            type:'Non-Veg',
+            image:'https://b.zmtcdn.com/data/dish_photos/b9a/842a22d5db7b13febcfaf08385ba2b9a.jpeg?fit=around|130:130&crop=130:130;*,*'
+            },
+        ],
     },
     {
         id:9,
@@ -282,7 +492,49 @@ export const DeliveryFoodList = [
         cusine:'Burger, Fast Food, Rolls',
         price:'₹200 for one',
         distance:'934m',
-        category:'Pure nonVeg'
+        category:'Pure nonVeg',
+        product:[
+            {
+            id:1,
+            title:'2 pc Hot & Crispy Chicken',
+            price:'₹250',
+            type:'Non-Veg',
+            signature:'Signature Hot & cripsy Chicken',
+            image:'https://b.zmtcdn.com/data/dish_photos/99f/72242c3ef1e98f4a12621216aa3e099f.jpeg?fit=around|130:130&crop=130:130;*,*',
+            },
+            {
+            id:2,
+            title:'2 pcs Smoky Red Chicken',
+            price:'₹179',
+            type:'Non-Veg',
+            signature:'Savour 2 pieces of KFC Smoky Red Chicken- Hot Grilled Chicken Leg Piece!',
+            image:'https://b.zmtcdn.com/data/dish_photos/03b/7b7c6bd499b57f6eca3817fcada5003b.jpeg?fit=around|130:130&crop=130:130;*,*'
+            },
+            {
+            id:3,
+            title:'4pc Hot Chicken Wings',
+            price:'₹250',
+            signature:'Seasoned,Signature KFC chicken wings',
+            type:'Non-Veg',
+            image:'https://b.zmtcdn.com/data/dish_photos/054/7c1c9c67d06e7d1b765096abc58f2054.jpeg?fit=around|130:130&crop=130:130;*,*'
+            },
+            {
+            id:4,
+            title:'Stay Home Bucket',
+            price:'₹1055.24',
+            signature:'Save 21% on 4 Hot & Crispy, 4 Wings, 6 Peri Strips & 2 dips (20gm each)',
+            type:'Non-Veg',
+            image:'https://b.zmtcdn.com/data/dish_photos/6d9/02cfeb5cb79a5372c40a249451e0a6d9.jpeg?fit=around|130:130&crop=130:130;*,*'
+            },
+            {
+            id:5,
+            title:'Peri Peri 10 Leg pc & 4 Dips',
+            price:'₹1266.67',
+            signature:'Leg before any wicket! Save 27% on 10 Peri Peri Leg Pieces & 4 Dips (20 gm each)',
+            type:'Non-Veg',
+            image:'https://b.zmtcdn.com/data/dish_photos/b9a/842a22d5db7b13febcfaf08385ba2b9a.jpeg?fit=around|130:130&crop=130:130;*,*'
+            },
+        ],
     },
     {
         id:10,
@@ -292,7 +544,49 @@ export const DeliveryFoodList = [
         cusine:'Burger, Fast Food, Rolls',
         price:'₹200 for one',
         distance:'934m',
-        category:'Cafe'
+        category:'Cafe',
+        product:[
+            {
+            id:1,
+            title:'2 pc Hot & Crispy Chicken',
+            price:'₹250',
+            type:'Non-Veg',
+            signature:'Signature Hot & cripsy Chicken',
+            image:'https://b.zmtcdn.com/data/dish_photos/99f/72242c3ef1e98f4a12621216aa3e099f.jpeg?fit=around|130:130&crop=130:130;*,*',
+            },
+            {
+            id:2,
+            title:'2 pcs Smoky Red Chicken',
+            price:'₹179',
+            type:'Non-Veg',
+            signature:'Savour 2 pieces of KFC Smoky Red Chicken- Hot Grilled Chicken Leg Piece!',
+            image:'https://b.zmtcdn.com/data/dish_photos/03b/7b7c6bd499b57f6eca3817fcada5003b.jpeg?fit=around|130:130&crop=130:130;*,*'
+            },
+            {
+            id:3,
+            title:'4pc Hot Chicken Wings',
+            price:'₹250',
+            signature:'Seasoned,Signature KFC chicken wings',
+            type:'Non-Veg',
+            image:'https://b.zmtcdn.com/data/dish_photos/054/7c1c9c67d06e7d1b765096abc58f2054.jpeg?fit=around|130:130&crop=130:130;*,*'
+            },
+            {
+            id:4,
+            title:'Stay Home Bucket',
+            price:'₹1055.24',
+            signature:'Save 21% on 4 Hot & Crispy, 4 Wings, 6 Peri Strips & 2 dips (20gm each)',
+            type:'Non-Veg',
+            image:'https://b.zmtcdn.com/data/dish_photos/6d9/02cfeb5cb79a5372c40a249451e0a6d9.jpeg?fit=around|130:130&crop=130:130;*,*'
+            },
+            {
+            id:5,
+            title:'Peri Peri 10 Leg pc & 4 Dips',
+            price:'₹1266.67',
+            signature:'Leg before any wicket! Save 27% on 10 Peri Peri Leg Pieces & 4 Dips (20 gm each)',
+            type:'Non-Veg',
+            image:'https://b.zmtcdn.com/data/dish_photos/b9a/842a22d5db7b13febcfaf08385ba2b9a.jpeg?fit=around|130:130&crop=130:130;*,*'
+            },
+        ],
     },
     {
         id:11,
