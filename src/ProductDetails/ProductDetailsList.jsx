@@ -3,10 +3,13 @@ import { TbTriangleFilled } from "react-icons/tb";
 export default function ProductDetailList({productDetails}){
 
     return(
-        <div className={classes.ProductDetailList}>
+      <div className={classes.ProductDetailList}>
             <h2>Special Offer Starting @ ₹89 Only</h2>
+            {/* <div className={classes.advertisment}>
+              <img src="https://www.dochipo.com/wp-content/uploads/2023/08/donut.png" alt="" />
+            </div> */}
             {productDetails.product.map((item)=>(
-               <div className={classes.ProductCard} key={item.id}>
+                <div className={classes.ProductCard} key={item.id}>
                  <span className={classes.arrow}><TbTriangleFilled/></span>
                  <div className={classes.productListFlex}>
                     <div className={classes.productContent}>
@@ -26,6 +29,6 @@ export default function ProductDetailList({productDetails}){
                  </div>
                </div>
             ))}
-        </div>
+      </div>
     )
 }

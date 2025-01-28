@@ -23,6 +23,7 @@ import Registation from './Authentication/Registation';
 import Login from './Authentication/Login';
 import ProductDetails from './ProductDetails/ProductDetails';
 import OrderDetails from './orderDetails/OrderDetails';
+import  AddToFavarouit from './orderDetails/AddToFavarouit';
 
 const router = createBrowserRouter([
 
@@ -50,11 +51,13 @@ const router = createBrowserRouter([
 
     {path:'OrderDetails',element:<OrderDetails/>},
 
+    {path:'OrderSuccessfull',element:< AddToFavarouit/>},
+
     {path:'explore', element:<ExploreRoot/>,children:[
 
       {index:true,element:<DiningPage/>},
 
-      {path:'Delivery',element:<DeliveryPage/>},
+      {path:'Delivery',element:<DeliveryPage />},
 
       {path:'NightsOut',element:<NightsOutPage/>}
 
@@ -85,7 +88,12 @@ const router = createBrowserRouter([
 ]) 
 
 function App() {
-  return <RouterProvider router={router}/>
+  
+  return(
+
+   <RouterProvider router={router}/>
+
+  ) 
 }
 
 export default App;
