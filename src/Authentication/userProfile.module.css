@@ -1,0 +1,27 @@
+.userprofile{
+    display: flex;
+}
+.userprofile img{
+    width:50px;
+    height:50px;
+    margin-top: -5px;
+    cursor: pointer;
+}
+.dropdownbtn{
+    margin-top: 15px;
+    cursor: pointer;
+}
+.dropdown{
+    position: absolute;
+    width:120px;
+    top:5rem;
+    right:1.5rem;
+    padding: 15px;
+    background-color: #fff;
+    border:1px solid #8080805b;
+    cursor: pointer;
+}
+.dropdown ul li{
+    list-style-type: none;
+    line-height: 30px;
+}
