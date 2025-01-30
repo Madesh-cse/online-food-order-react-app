@@ -8,6 +8,7 @@ import classes from './NavBar.module.css'
 import { useSelector } from "react-redux"
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import UserProfile from "../Authentication/UserProfile";
 export default function Navbar(){
 
     const selector = useSelector((state)=>state.Cart.items)
@@ -51,8 +52,9 @@ export default function Navbar(){
                     <div className={classes.navInput}>
                         <input alt="text" placeholder="Search for..."/>
                         <span><button><IoSearchSharp/></button></span>
-                        <button className={classes.btn}><IoFilterSharp/></button>
+                        {/* <button className={classes.btn}><IoFilterSharp/></button> */}
                        <Link to='/CheckOut'><button className={classes.btn}><IoBagHandle/>({selector.length})</button></Link>
+                       <UserProfile handleLogout={handleLogout}/>
                        <button onClick={handleLogout}>Logout</button>
                     </div>
                 </div>
