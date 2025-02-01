@@ -7,7 +7,8 @@ const initialState = {
     TotalItemCost:0,
     handlingCharge:5,
     grantTotal:0,
-    orderDetails:null
+    orderDetails:null,
+    value:0
 
 }
 
@@ -34,25 +35,6 @@ const CartSlice = createSlice({
 
             alert('Item is added')
         },
-        updateTempQuantity(state,action){
-            console.log("Action Payload:", action.payload);
-            console.log("Before Update:", state.tempItem);
-
-            if (!Array.isArray(state.tempItem)) {
-                console.error("tempItem is not an array!");
-                return;
-            }
-
-            state.tempItem = state.tempItem.map((item) => {
-                if (item.id === action.payload.id) {
-                  return { ...item, quantity: action.payload.quantity }; // Update the quantity immutably
-                }
-                return item; // Keep other items unchanged
-              });
-
-            console.log("After Updated :", state.tempItem);
-            
-        },
         removeItem(state,action){
             state.items = state.items.filter((item)=>item.id!==action.payload)
             state.tempItem = [{...state.items}]
@@ -61,9 +43,9 @@ const CartSlice = createSlice({
         },
         setOrderDetails(state,action){
             state.orderDetails = action.payload
-        }
+        },
     }
 })
 
 export default CartSlice.reducer
-export const {AddItem,removeItem,setOrderDetails,updateTempQuantity} = CartSlice.actions
+export const {AddItem,removeItem,setOrderDetails} = CartSlice.actions
