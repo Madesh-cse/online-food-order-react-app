@@ -5,6 +5,38 @@
 section{
     margin-left: 220px;
 }
+.banner{
+    position: relative;
+    max-width: 100%;
+}
+.banner img{
+    max-width: 100%;
+}
+.bannerContent{
+    position: absolute;
+    top:60px;
+    left:30px;
+}
+.bannerContent h4{
+    color: #747474;
+    font-size: calc(14px + 8*(100vw - 320px) / 1600);
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.bannerContent h2{
+    font-size: calc(18px + 6*(100vw - 320px) / 1600);
+    margin-block: calc(4px + 4*(100vw - 320px) / 447);
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.bannerContent a{
+    border:1px solid #e74a3b;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: #e74a3b;
+    color:#fff
+}
 .catFlex{
     display: flex;
     justify-content: space-between;

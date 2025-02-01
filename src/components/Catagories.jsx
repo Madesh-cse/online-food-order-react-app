@@ -7,6 +7,14 @@ export default function Catagories(){
 
     return(
         <section>
+            <div className={classes.banner}>
+                <img src="https://themes.pixelstrap.net/zomo/landing/frontend/assets/images/home-bg.png" alt="" />
+                <div className={classes.bannerContent}>
+                    <h4>50% off on your first order</h4>
+                    <h2>Unforgettable meals. Delivered.</h2>
+                    <p><Link to='/explore'>Shop Now</Link></p>
+                </div>
+            </div>
             <div className={classes.catFlex}>
                 <h2>Explore categories</h2>
                 <p>See all <PiGreaterThanBold/> </p>

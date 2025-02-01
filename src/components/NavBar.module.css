@@ -2,6 +2,7 @@
     font-family: circular std book, sans-serif;
 }
 header{
+    max-width:100%;
     margin-left:220px;
     padding:20px ;
     box-shadow: 0 .125rem .25rem 0 rgba(58, 59, 69, .2) !important;
@@ -60,4 +61,28 @@ header{
     border-radius:5px;
     align-items: center;
     /* margin-top: 8px; */
+}
+
+@media only screen and (max-width:1024px){
+    .navInput input{
+        display: none;
+    }
+    .navInput span button{
+        display: none;
+    }
+    .navbar a{
+        margin-right: 15px;
+        font-size: 11px;
+    }
+    .btn{
+        padding: 0 8px 0 8px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .navbar a{
+        margin-right: 10px;
+        font-size: 10px;
+    }
+
 }

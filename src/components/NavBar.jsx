@@ -2,7 +2,6 @@ import { FaLocationCrosshairs } from "react-icons/fa6";
 import { IoBagHandle } from "react-icons/io5";
 import { TbMoneybag } from "react-icons/tb";
 import { IoSearchSharp } from "react-icons/io5";
-import { IoFilterSharp } from "react-icons/io5";
 import {  Link } from "react-router-dom";
 import classes from './NavBar.module.css'
 import { useSelector } from "react-redux"
@@ -55,7 +54,7 @@ export default function Navbar(){
                         {/* <button className={classes.btn}><IoFilterSharp/></button> */}
                        <Link to='/CheckOut'><button className={classes.btn}><IoBagHandle/>({selector.length})</button></Link>
                        <UserProfile handleLogout={handleLogout}/>
-                       <button onClick={handleLogout}>Logout</button>
+                       {/* <button onClick={handleLogout}>Logout</button> */}
                     </div>
                 </div>
             </nav>
