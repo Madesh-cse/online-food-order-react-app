@@ -1,9 +1,10 @@
 .CartBg{
     max-width: 100%;
     height: auto;
-    margin-left: 226px
+    margin-left: 226px;
 }
 .CartBox,.BillBox{
+  position: relative;
   background-color: white;
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -47,7 +48,7 @@
   justify-content: space-between;
   padding: 10px 10px 5px 0;
 }
-.updatebutton{
+.orderBtn{
   background-color: rgb(14, 80, 32);
   color:#fff;
   padding: 10px 15px;
@@ -63,4 +64,12 @@
   color:#fff;
   border:1px solid #e74a3b;
   border-radius: 5px;
+}
+.orderBox{
+  padding: 15px;
+}
+.orderBtn{
+  position: absolute;
+  padding: 10px 20px;
+  right:50px;
 }

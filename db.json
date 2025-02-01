@@ -1,13 +1,6 @@
 {
   "users": [
     {
-      "id": "365e",
-      "firstName": "madesh",
-      "Email": "mad@gmail.com",
-      "password": "123456",
-      "confirmPassword": "123456"
-    },
-    {
       "id": "2775",
       "firstName": "madesh",
       "Email": "mad@gmail.com",

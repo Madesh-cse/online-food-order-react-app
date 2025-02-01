@@ -3,16 +3,15 @@ import { LiaRupeeSignSolid } from "react-icons/lia";
 import { PiNotepadFill } from "react-icons/pi";
 import {useSelector,useDispatch} from 'react-redux'
 import { removeItem } from '../features/AddToCart/CartSlice';
-import { updateTempQuantity } from '../features/AddToCart/CartSlice';
 import { setOrderDetails } from '../features/AddToCart/CartSlice';
 import { useNavigate } from 'react-router-dom';
 export default function CartPage(){
 
     const {items:cartItem,TotalItemCost,handlingCharge,grantTotal,tempItem} = useSelector((state)=>state.Cart)
 
-    console.log(tempItem)
+    // console.log(tempItem)
 
-    useSelector((state)=>console.log(state))
+    // useSelector((state)=>console.log(state))
 
     const naviagte = useNavigate()
 
@@ -21,14 +20,6 @@ export default function CartPage(){
     const handleRemoveId = (id)=>{
 
         dispatch(removeItem(id)) // id=>is a payload data for action    
-    }
-
-    const handleUpdateQuantity = (id,quantity)=>{
-
-        dispatch(updateTempQuantity({
-           type: 'updateTempQuantity',
-           payload:{id,quantity}
-        })) // id and quantity are payload
     }
 
     const handleOrder = ()=>{
@@ -55,15 +46,21 @@ export default function CartPage(){
                         </div>
                     </div>
                     <div className={classes.updateBtn}>
-                        <input type="number" min='1' value={tempItem.find((tempsItem)=>tempsItem.id === item.id)?.quantity||item.quantity} onChange={(e)=>handleUpdateQuantity(item.id,parseInt(e.target.value,10))} />
+                       <button>+</button>
+                       <span>{item.quantity}</span>
+                       <button>-</button>
                     </div>
                     <div className={classes.accesBtn}>
-                        <button className={classes.updatebutton}>Update</button>
+                        {/* <button className={classes.updatebutton}>Update</button> */}
                         <button className={classes.removeBtn}  onClick={()=>handleRemoveId(item.id)}>Remove</button>
                     </div>
                  </div>
                 ))}
-                <button onClick={handleOrder}>order</button>
+                {cartItem.length > 0 && 
+                <div className={classes.orderBox}>
+                  <button className={classes.orderBtn} onClick={handleOrder}>CHECK OUT</button>
+                </div>}
+                
             </div>
             <div className={classes.BillBox}>
              <h1>Bill Details</h1>
