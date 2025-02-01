@@ -2,6 +2,11 @@ import classes from './ProductDetailsList.module.css'
 import { TbTriangleFilled } from "react-icons/tb";
 export default function ProductDetailList({productDetails}){
 
+
+  function handleCart(){
+
+    alert('Item is Added to Cart')
+  }
     return(
       <div className={classes.ProductDetailList}>
             <h2>Special Offer Starting @ ₹89 Only</h2>
@@ -24,7 +29,7 @@ export default function ProductDetailList({productDetails}){
                     </div>
                     <div className={classes.ProductImg}>
                         <img src={item.image} alt="" />
-                        <button>ADD</button>
+                        <button onClick={handleCart}>ADD</button>
                     </div>
                  </div>
                </div>

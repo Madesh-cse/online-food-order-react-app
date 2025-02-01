@@ -1,78 +1,107 @@
 
-.productDetails{
+/* .productDetails{
     margin-left: 300px;
-    margin-top: 40px;
+} */
+.Restaruntsec1img img{
+    width: 100%;
+    height:400px;
+    object-fit: cover;
 }
-.RestarurntAdd{
-    width:800px;
-    height:250px;
-    margin-top: 30px;
-    border: 1px solid rgba(2, 6, 12, 0.15);
-    background: white;
-    box-shadow: rgba(0, 0, 0, 0.04) 0px 8px 16px;
-    border-radius: 20px;
+.RestaruntTitleBox{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    bottom:120px;
+    width: 80%;
+    height:170px;
+    background-color:#fff;
+    border-radius: 8px;
+    margin-left: 30px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
-.loactionTitle{
-    max-width: 100%;
-    padding: 20px;
-    background-color: rgba(34, 186, 34, 0.59) ;
-    color:#fff;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+.RestaruntGrid{
+    display: flex;
 }
-.loactionTitle p{
-    color:#fff;
-   padding-left: 20px;
+.RestaruntTitleLogo img{
+    max-width:100%;
+    height:120px;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 25px;
+    margin:15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.Description{
+    color:#000;
+    margin-top: 20px;
+}
+.DescriptionTitle{
+    display: flex;
+}
+.DescriptionTitle h1{
+
+    font-size: 1.8rem;
+    font-family: sans-serif;
+}
+.Description span{
+    padding-right: 10px;
+}
+.DescriptionTitle p{
+    padding:15px;
+    font-size: 14px;
+}
+.DescriptionLocation{
+    display: flex;
+}
+.delivery{
+    color: #e84a3a;
+    background-color: rgb(232 74 58 / 9%);
+    border-radius: 5px;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    padding: 5px 8px;
+    margin-right: 10px;
+    font-weight: 600;
+}
+.offer{
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 11px;
+    color: #1cc88a;
+    background-color: rgb(28 200 138 / 0.07);
+    padding: 5px 8px;
+    margin-right: 10px;
+    font-weight: 600;
+}
+.Timing{
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 11px;
+    color: #36b9cc;
+    background-color: rgb(54 185 204 / 0.07);
+    padding: 5px 8px;
+    font-weight: 600;
+}
+.RestaruntDescription{
+    color: #858796 !important;
+    padding: 15px 0 0 5px;
+    font-size: 13px;
+    font-weight: 550;
 }
 .Rating{
     display: flex;
-    padding: 20px;
 }
 .Rating p{
-    color: #000;
-    font-weight: 700;
-    padding-left: 10px;
-    font-size: 18px;
-    padding-top: 10px;
-   
+    font-size: 11px;
+    padding: 15px 0 0 5px;
+    color: #858796 !important;
+    margin-right: 10px;
 }
-.star{
-    background-color: rgb(14, 80, 32);
-    color: rgb(255, 255, 255);
-    border: 1px solid rgb(14, 80, 32);
-    font-size: 15px;
-    text-align: center;
-    margin-top: 10px;
-    padding:5px 10px;
-    border-radius: 5px;
-}
-.FoodList ul {
 
-    list-style-type: none;
-    padding-left: 20px;
+.Rating span{
+    color:#f6c23e !important;
 }
-.FoodList a{
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: -0.1px;
-    color: rgb(255, 82, 0);
-    padding-left: 5px;
-}
-.location{
-    display: flex;
-    padding-left: 20px;
-    padding-top: 10px;
-}
-.locationquery{
-    color:#000;
-    font-weight:600 ;
-}
-.locationName{
-    color:#c0c0c0;
-    padding-left: 10px;
-}
-.descripition{
-    padding-top:10px;
-    padding-left: 20px;
-}
+
+

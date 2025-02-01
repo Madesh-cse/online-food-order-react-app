@@ -1,5 +1,5 @@
 import classes from './Restarunt1.module.css'
-// import Restarunt1Filter from './Restarunt1Filter';
+import { useState } from 'react';
 import Recipes from './Restarunt1Filter';
 import logo from '../asset/RestaruntImg/burgerking.png'
 import { ImSpoonKnife } from "react-icons/im";
@@ -7,10 +7,20 @@ import { MdDeliveryDining } from "react-icons/md";
 import { MdLocalOffer } from "react-icons/md";
 import { GoClock } from "react-icons/go";
 import { IoIosStar } from "react-icons/io";
+import ProductModal from './ProductCartModal';
 export default function Restarunt1(){
+
+    const[Modalopen,setModalopen] = useState(false)
+
+    const HandleModal = ()=>{
+        setModalopen(!Modalopen)
+    }
 
     return(
         <>
+         <ProductModal open = {Modalopen} onClose = {HandleModal}>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus ducimus autem placeat, ut nihil laboriosam! Sit adipisci necessitatibus doloribus obcaecati!</p>
+        </ProductModal>
          <section className={classes.Restarunt}>
             <div className={classes.Restaruntsec1}>
                 <div className={classes.Restaruntsec1img}></div>
