@@ -103,6 +103,8 @@ export const DeliveryFoodList = [
         price:'₹200 for one',
         distance:'934m',
         category:'Pure nonVeg',
+        banner:'https://cdn.i.haymarketmedia.asia/?n=campaign-asia%2Fcontent%2FKFC+OOH+1+HotSpicyCOB+land.jpg&c=0',
+        logo:'https://b.zmtcdn.com/data/brand_creatives/logos/f1dc700c8be881b9a17be904971a0644_1726681675.png',
         product:[
             {
             id:1,
@@ -155,6 +157,8 @@ export const DeliveryFoodList = [
         price:'₹200 for one',
         distance:'934m',
         category:'Pure nonVeg',
+        banner:'https://www.dominos.co.in/blog/wp-content/uploads/2023/02/Pizza-Toppings-Banner-980x442.jpg',
+        logo:'https://b.zmtcdn.com/data/brand_creatives/logos/1a985408ca7ad8fd097f2c47db9c5cb6_1611252640.png',
         product:[
             {
             title:'Boneless Fried Chicken Basket (Save 35%)',
@@ -186,6 +190,8 @@ export const DeliveryFoodList = [
         price:'₹200 for one',
         distance:'934m',
         category:'Briyani',
+        banner:'https://www.sshyderabadbiryani.com/banner/image_2024-09-06-11-47-33_66da9e7dd5550.jpg',
+        logo:'https://b.zmtcdn.com/data/brand_creatives/logos/868e99c35e35fc2bae1dccc465ed4c82_1625159864.png',
         product:[
             {
                 id:1,
@@ -628,6 +634,7 @@ export const DeliveryFoodList = [
         price:'₹200 for one',
         distance:'934m',
         category:'Briyani',
+        banner:'https://thalappakatti.com/wp-content/uploads/2016/11/three-col-1-2048x0.jpg',
         product:[
             {
             id:1,

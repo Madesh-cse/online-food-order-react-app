@@ -6,6 +6,7 @@
     height:50px;
     margin-top: -5px;
     cursor: pointer;
+    border-radius: 50%;
 }
 .dropdownbtn{
     margin-top: 15px;

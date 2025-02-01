@@ -19,6 +19,7 @@ export default function SideBar(){
 
 const [isOpen,setIsOpen] = useState(false);
 const[popup,setpopup] = useState(true)
+const[opensidebar,setopensidebar] = useState(false)
 
 function HandleExtraPage(){
     setIsOpen((prevState)=>!prevState)
@@ -27,6 +28,10 @@ function HandleExtraPage(){
 
 function Handlepopup(){
     setpopup(false)
+}
+
+function handleSidebar(){
+    setopensidebar(!opensidebar)
 }
     return(
         <aside>
@@ -39,7 +44,7 @@ function Handlepopup(){
                 <div className={classes.navlist}>
                     <ul>
                         <li>
-                            <NavLink to='/' className={({isActive})=>isActive ? classes.active:undefined} end ><span><IoHomeOutline/></span> HOME</NavLink>
+                            <NavLink to='/' className={({isActive})=>isActive ? classes.active:undefined} end  ><span><IoHomeOutline/></span> HOME</NavLink>
                         </li>
                         <li>
                             <NavLink to='explore' className={({isActive})=>isActive ? classes.active:undefined} ><span><SiCompilerexplorer/></span>EXPLORE</NavLink>
@@ -86,6 +91,7 @@ function Handlepopup(){
                     </div>
                    </div>
                 </div>
+                <button onClick={handleSidebar}>close</button>
             </div>
         </aside>
     )

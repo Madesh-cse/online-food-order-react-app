@@ -11,8 +11,8 @@
     background-color: #c60021;
     background-image: linear-gradient(180deg, #c60021 10%, #224abe 100%);
     background-size: cover;
-    overflow-y: scroll;
-    scrollbar-width: thin;
+    /* overflow-y: scroll;
+    scrollbar-width: thin; */
 }
 .Logo{
     color: #fff;
@@ -141,3 +141,4 @@
     color:#c0c0c0;
     margin-top: 5px;
 }
+  

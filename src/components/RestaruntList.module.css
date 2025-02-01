@@ -18,7 +18,7 @@
 }
 .ResCard{
     width:400px;
-    height:110px;
+    height:120px;
     margin-right: 20px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 5px;
@@ -84,4 +84,13 @@
 }
 .distance{
     margin: 10px 0 5px 20px;
+}
+
+@media only screen and (max-width:1024px){
+    .ResCard{
+        width: 100%;
+    }
+    .ResCardFlex img{
+        width:15%;
+    }
 }
