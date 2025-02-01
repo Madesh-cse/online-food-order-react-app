@@ -1,0 +1,73 @@
+.orderDetail{
+    margin-left: 300px;
+}
+.orderDetailBox{
+    width:800px;
+    height:220px;
+    border:1px solid#c0c0c0;
+    margin-top: 30px;
+    border-radius: 5px;
+
+}
+.orderContent{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+.orderContent p{
+    line-height: 20px;
+}
+.orderDescription p{
+    font-size: 13px;
+}
+.DeliveryTime p{
+    font-size: 14px;
+}
+.reorder{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.reorder p{
+    color:#000;
+}
+.reorder span{
+    color:gray;
+    font-size: 15px;
+}
+.orderContent img{
+    width:100px;
+    height:auto;
+    object-fit: contain;
+}
+.orderContent ol{
+    padding: 10px;
+}
+.reorderBtn button{
+    padding: 8px 25px;
+    margin: 15px 0 0 20px ;
+}
+.reorderHelp{
+    border:1px solid  #e74a3b !important;
+    background-color: #fff;
+    color:#e74a3b;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.reorderHelp:hover{
+    background-color: #e74a3b;
+    color:#fff;
+}
+.Rebtn{
+    border:1px solid  #e74a3b !important;
+    background-color: #e74a3b;
+    color:#fff;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.line{
+    width:70%;
+    margin: auto;
+    border: 0.5px solid #c0c0c061;;
+}
