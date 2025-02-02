@@ -1,7 +1,7 @@
 import { PiGreaterThanBold } from "react-icons/pi";
 import classes from './RestaruntList.module.css'
 import { Link } from "react-router-dom";
-import img1 from '../asset/RestaruntImg/burgerking.png'
+import img1 from '../asset/RestaruntImg/chef.jpg'
 import img2 from '../asset/RestaruntImg/domino.png'
 import img3 from '../asset/RestaruntImg/kfc.png'
 import img4 from '../asset/RestaruntImg/macd.png'
@@ -22,12 +22,12 @@ export default function RestaruntList(){
                 <p>See all <PiGreaterThanBold/> </p>
             </div>
             <div  className={classes.ResRow}>
-             <Link to='/Restarunt-List/Burger-King'>
+             <Link to='/Restarunt-List/Burger-King' className={classes.resbox}>
                 <div className={classes.ResCard}>
                         <div className={classes.ResCardFlex}>
                             <img src ={img1} alt =''/>
                             <div classes={classes.ResContent}>
-                                <h4>Burger King</h4>
+                                <h4>Time BreakFast</h4>
                                 <div className={classes.ResDescription}>
                                     <p><span className={classes.Rating}><CiStar/></span>0.8(873)</p>
                                     <p><span><ImSpoonKnife/></span>Burger</p>
@@ -45,7 +45,7 @@ export default function RestaruntList(){
                         <div className={classes.ResCardFlex}>
                             <img src ={img2} alt =''/>
                             <div classes={classes.ResContent}>
-                                <h4>Burger King</h4>
+                                <h4>Dominos</h4>
                                 <div className={classes.ResDescription}>
                                     <p><span className={classes.Rating}><CiStar/></span>0.8(873)</p>
                                     <p><span><ImSpoonKnife/></span>Burger</p>
@@ -62,7 +62,7 @@ export default function RestaruntList(){
                         <div className={classes.ResCardFlex}>
                             <img src ={img3} alt =''/>
                             <div classes={classes.ResContent}>
-                                <h4>Burger King</h4>
+                                <h4>KFC</h4>
                                 <div className={classes.ResDescription}>
                                     <p><span className={classes.Rating}><CiStar/></span>0.8(873)</p>
                                     <p><span><ImSpoonKnife/></span>Burger</p>
@@ -79,7 +79,7 @@ export default function RestaruntList(){
                         <div className={classes.ResCardFlex}>
                             <img src ={img4} alt =''/>
                             <div classes={classes.ResContent}>
-                                <h4>Burger King</h4>
+                                <h4>MC Donalad's</h4>
                                 <div className={classes.ResDescription}>
                                     <p><span className={classes.Rating}><CiStar/></span>0.8(873)</p>
                                     <p><span><ImSpoonKnife/></span>Burger</p>
@@ -96,7 +96,7 @@ export default function RestaruntList(){
                         <div className={classes.ResCardFlex}>
                             <img src ={img5} alt =''/>
                             <div classes={classes.ResContent}>
-                                <h4>Burger King</h4>
+                                <h4>Pizza Hut</h4>
                                 <div className={classes.ResDescription}>
                                     <p><span className={classes.Rating}><CiStar/></span>0.8(873)</p>
                                     <p><span><ImSpoonKnife/></span>Burger</p>
@@ -113,7 +113,7 @@ export default function RestaruntList(){
                         <div className={classes.ResCardFlex}>
                             <img src ={img6} alt =''/>
                             <div classes={classes.ResContent}>
-                                <h4>Burger King</h4>
+                                <h4>SUBWAY</h4>
                                 <div className={classes.ResDescription}>
                                     <p><span className={classes.Rating}><CiStar/></span>0.8(873)</p>
                                     <p><span><ImSpoonKnife/></span>Burger</p>

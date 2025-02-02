@@ -8,6 +8,7 @@ import { useSelector } from "react-redux"
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import UserProfile from "../Authentication/UserProfile";
+import ProductModal from "../RestaruntPages/ProductCartModal";
 export default function Navbar(){
 
     const selector = useSelector((state)=>state.Cart.items)
@@ -23,7 +24,7 @@ export default function Navbar(){
             console.log("User to delete:", user);
            axios.delete(`http://localhost:9000/users/${user.id}`)
            .then(()=>{
-            alert("User data deleted successfully and logged out.");
+            // alert("User data deleted successfully and logged out.");
               localStorage.removeItem("user"); // Remove user from localStorage
               navigate("/login");
             })
@@ -42,6 +43,7 @@ export default function Navbar(){
 
         <header>
             <nav>
+                {handleLogout && <ProductModal>User data deleted successfully and logged out.</ProductModal>}
                 <div className={classes.navbarFlex}>
                     <div className={classes.navbar}>
                        <Link to='/'><FaLocationCrosshairs/> SAN FRANCISCO,CALIFORNIA</Link>

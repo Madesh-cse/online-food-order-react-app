@@ -16,6 +16,9 @@
 .ResFlex p{
     font-size: 13px;
 }
+.resbox{
+    text-decoration: none;
+}
 .ResCard{
     width:400px;
     height:120px;
