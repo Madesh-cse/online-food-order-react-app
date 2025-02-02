@@ -94,7 +94,16 @@
 .favorite{
     top:20px;
     right:30px;
-    padding: 5px;
+    padding: 5px 10px;
+    border: 1px solid rgb(14, 80, 32);
+    background-color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.favorite:hover{
+    background-color: rgb(14, 80, 32);
+    color:#fff;
 }
 .DeliveryRestarunt a{
     text-decoration: none;

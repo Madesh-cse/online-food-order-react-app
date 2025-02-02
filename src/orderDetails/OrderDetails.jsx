@@ -2,8 +2,11 @@ import React from 'react'
 import classes from './Order.module.css'
 import { useSelector } from 'react-redux'
 import { FaHeadset } from "react-icons/fa6";
+import { TabTitle } from '../components/GeneralFunction';
 
 function OrderDetails() {
+
+    TabTitle("Order Tracks")
 
     const orderDetails = useSelector((state)=>state.Cart.orderDetails)
 

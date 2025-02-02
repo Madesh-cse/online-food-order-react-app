@@ -21,7 +21,7 @@ export default function DeliveryFoodListItem(){
     
 
 
-    // let[data,setdata] = useState(DeliveryFoodList);
+    // let[data,setdata] = useState(Products);
 
     // const Filterresult = (catItem) => {
 
@@ -45,9 +45,11 @@ return(
     </div>
     <div className={classes.DeliveryRestarunt}>
         {Products.map((item)=>(
-            <Link to={`/ProductDetails/${item.id}`} key={item.id}>
+           
              <div className={classes.DeliveryDiningCard}>
-                <img src={item.img} alt = ''/>
+                 <Link to={`/ProductDetails/${item.id}`} key={item.id}>
+                  <img src={item.img} alt = ''/>
+                </Link>
                 <div className={classes.DeliveryDiningTitle}>
                     <h4>{item.title}</h4>
                     <p>{item.rating}<span><LiaStarSolid/></span></p>
@@ -62,7 +64,7 @@ return(
                 </div>
                 <button className={classes.favorite} onClick={()=>handleFavorite(item)}><FaRegHeart/></button>
             </div>
-            </Link>
+            
         ))}
     </div>
     </>
