@@ -47,7 +47,7 @@ const Modal = forwardRef(function ModalApp({title},ref){
           <dialog className={classes.FilterModal} ref={dialogRef} >
             <div className={classes.ModalTitle}>
              <h2>{title}</h2>
-             <button onClick={()=>dialogRef.current.close()}>X</button>
+             <button onClick={()=>dialogRef.current.close()} className={classes.close}>X</button>
             </div>
             <hr className={classes.modalline}/>
             <div className={classes.ModalContentTab}>
@@ -93,7 +93,7 @@ const Modal = forwardRef(function ModalApp({title},ref){
             <hr className={classes.modalline}/>
             <div className={classes.ModalFinalBtn}>
                 <button className={classes.ModalClearBtn}>Clear all</button>
-                <button className={classes.ModalSaveBtn} >Apply</button>
+                <button className={classes.ModalSaveBtn} onClick={()=>dialogRef.current.close()} >Apply</button>
             </div>
         </dialog>
         </>

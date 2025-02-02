@@ -41,7 +41,7 @@ export default function Restarunt1Filter(){
                 <div className={classes.RestaruntCard} key={Fooditem.id}>
                      <img src={Fooditem.image} alt='recipes'/>
                      <div className={classes.Restaruntcontent}>
-                         <h4>{Fooditem.name.length>10?`${Fooditem.name.slice(0,10)}...`: Fooditem.name}</h4>
+                         <h4>{Fooditem.name.length>20?`${Fooditem.name.slice(0,20)}...`: Fooditem.name}</h4>
                          <p>{Fooditem.rating} <span><FaStar/></span></p>
                      </div>
                      <div className={classes.RestaruntCusines}>

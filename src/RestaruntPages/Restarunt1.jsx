@@ -1,7 +1,7 @@
 import classes from './Restarunt1.module.css'
 import { useState } from 'react';
 import Recipes from './Restarunt1Filter';
-import logo from '../asset/RestaruntImg/burgerking.png'
+import logo from '../asset/RestaruntImg/chef.jpg'
 import { ImSpoonKnife } from "react-icons/im";
 import { MdDeliveryDining } from "react-icons/md";
 import { MdLocalOffer } from "react-icons/md";
@@ -31,7 +31,7 @@ export default function Restarunt1(){
                         </div>
                         <div className={classes.Description}>
                             <div className={classes.DescriptionTitle}>
-                              <h1>Burger King</h1>
+                              <h1>Time BreakFast</h1>
                               <p><span><ImSpoonKnife/></span>American,Fast Food</p>
                             </div>
                             <div className={classes.DescriptionLocation}>
