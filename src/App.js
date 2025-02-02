@@ -24,6 +24,7 @@ import Login from './Authentication/Login';
 import ProductDetails from './ProductDetails/ProductDetails';
 import OrderDetails from './orderDetails/OrderDetails';
 import  AddToFavarouit from './orderDetails/AddToFavarouit';
+import OrderStatus from './orderDetails/OrderStatus';
 
 const router = createBrowserRouter([
 
@@ -52,6 +53,8 @@ const router = createBrowserRouter([
     {path:'OrderDetails',element:<OrderDetails/>},
 
     {path:'OrderSuccessfull',element:< AddToFavarouit/>},
+
+    {path:'OrderStatus',element:<OrderStatus/>},
 
     {path:'explore', element:<ExploreRoot/>,children:[
 

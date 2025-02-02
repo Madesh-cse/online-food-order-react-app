@@ -73,3 +73,16 @@
   padding: 10px 20px;
   right:50px;
 }
+.updateBtn button{
+  padding: 5px 8px;
+  font-size: 18px;
+  background-color: rgb(14, 80, 32);
+  color:#fff;
+  border: 1px solid rgb(14, 80, 32);
+  outline:none;
+}
+.updateBtn span{
+  padding: 7px;
+  background-color: rgb(14, 80, 32);
+  color:#fff;
+}

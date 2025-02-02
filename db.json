@@ -1,13 +1,6 @@
 {
   "users": [
     {
-      "id": "2775",
-      "firstName": "madesh",
-      "Email": "mad@gmail.com",
-      "password": "123456",
-      "confirmPassword": "123456"
-    },
-    {
       "id": "42ab",
       "firstName": "Madesh",
       "Email": "madehmad@gmail.com",
@@ -20,6 +13,20 @@
       "Email": "naveen@gmail.com",
       "password": "naveen1",
       "confirmPassword": "naveen1"
+    },
+    {
+      "id": "c5f1",
+      "firstName": "karthik",
+      "Email": "karthik123@gmail.com",
+      "password": "karthik",
+      "confirmPassword": "karthik"
+    },
+    {
+      "id": "9e3a",
+      "firstName": "Madesh",
+      "Email": "madesh11@gmail.com",
+      "password": "madesh",
+      "confirmPassword": "madesh"
     }
   ]
 }

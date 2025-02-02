@@ -21,6 +21,7 @@
     background-color: #fff;
     border:1px solid #8080805b;
     cursor: pointer;
+    z-index: 2;
 }
 .dropdown ul li{
     list-style-type: none;

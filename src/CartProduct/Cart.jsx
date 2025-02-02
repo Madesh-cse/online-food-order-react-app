@@ -3,9 +3,11 @@ import { LiaRupeeSignSolid } from "react-icons/lia";
 import { PiNotepadFill } from "react-icons/pi";
 import {useSelector,useDispatch} from 'react-redux'
 import { removeItem } from '../features/AddToCart/CartSlice';
-import { setOrderDetails } from '../features/AddToCart/CartSlice';
 import { useNavigate } from 'react-router-dom';
+import { TabTitle } from '../components/GeneralFunction';
 export default function CartPage(){
+
+    TabTitle("Cart Products")
 
     const {items:cartItem,TotalItemCost,handlingCharge,grantTotal,tempItem} = useSelector((state)=>state.Cart)
 
@@ -23,8 +25,7 @@ export default function CartPage(){
     }
 
     const handleOrder = ()=>{
-        dispatch(setOrderDetails(cartItem))
-        naviagte('/OrderDetails')
+        naviagte('/OrderStatus')
 
     }
 
