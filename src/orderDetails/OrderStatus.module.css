@@ -1,0 +1,26 @@
+.orderStatus{
+    margin-left:226px;
+}
+.orderStatusImg  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;;
+}
+.orderDescription{
+    text-align: center;
+}
+.orderDescription h2{
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.orderDescription button{
+    border:1px solid #e74a3b;
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #e74a3b;
+    color:#fff;
+    outline: none;
+    margin-top: 20px;
+}
