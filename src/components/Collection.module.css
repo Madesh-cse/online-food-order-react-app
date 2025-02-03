@@ -41,5 +41,8 @@
     position: absolute;
     bottom: 20px;
     left:20px;
+    
+}
+.collectionTitle p,h3{
     color:#fff;
 }
