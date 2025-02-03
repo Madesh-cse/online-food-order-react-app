@@ -27,7 +27,7 @@ function OrderDetails() {
                     <p>730 S Mendenhall Rd,Menphis,TN 38122,India</p>
                     <p>ORDER 24356798  Mon,Nov 12,6:26PM</p>
                     <ol>
-                        <li>{item.name}</li>
+                        <li>{item.name} X {item.quantity}</li>
                     </ol>
                 </div>
                 <div className={classes.DeliveryTime}>

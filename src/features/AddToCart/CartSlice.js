@@ -41,6 +41,28 @@ const CartSlice = createSlice({
             state.TotalItemCost = state.items.reduce((sum,item)=>sum+item.caloriesPerServing,0)
             state.grantTotal = state.TotalItemCost + state.handlingCharge
         },
+        incrementQuantity(state, action) {
+            const item = state.items.find((item) => item.id === action.payload);
+            if (item) {
+              item.quantity += 1;
+              state.TotalItemCost = state.items.reduce((sum, item) => sum + item.caloriesPerServing * item.quantity, 0);
+              state.grantTotal = state.TotalItemCost + state.handlingCharge;
+            }
+          },
+          decrementQuantity(state, action) {
+            const item = state.items.find((item) => item.id === action.payload);
+            if (item && item.quantity > 1) {
+              item.quantity -= 1;
+              state.TotalItemCost = state.items.reduce((sum, item) => sum + item.caloriesPerServing * item.quantity, 0);
+              state.grantTotal = state.TotalItemCost + state.handlingCharge;
+            } else if (item && item.quantity === 1) {
+              // Optionally, remove the item if quantity is 1 and decrement is pressed
+              state.items = state.items.filter((item) => item.id !== action.payload);
+              state.tempItem = [...state.items];
+              state.TotalItemCost = state.items.reduce((sum, item) => sum + item.caloriesPerServing * item.quantity, 0);
+              state.grantTotal = state.TotalItemCost + state.handlingCharge;
+            }
+          },
         setOrderDetails(state,action){
             state.orderDetails = action.payload
         },
@@ -48,4 +70,4 @@ const CartSlice = createSlice({
 })
 
 export default CartSlice.reducer
-export const {AddItem,removeItem,setOrderDetails} = CartSlice.actions
+export const {AddItem,removeItem,setOrderDetails,incrementQuantity,decrementQuantity} = CartSlice.actions
