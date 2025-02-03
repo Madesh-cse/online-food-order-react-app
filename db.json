@@ -27,6 +27,13 @@
       "Email": "madesh11@gmail.com",
       "password": "madesh",
       "confirmPassword": "madesh"
+    },
+    {
+      "id": "76d3",
+      "firstName": "madesh",
+      "Email": "madesh12@gmail.com",
+      "password": "madesh1",
+      "confirmPassword": "madesh1"
     }
   ]
 }

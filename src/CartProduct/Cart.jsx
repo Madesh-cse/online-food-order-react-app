@@ -5,6 +5,7 @@ import {useSelector,useDispatch} from 'react-redux'
 import { removeItem } from '../features/AddToCart/CartSlice';
 import { useNavigate } from 'react-router-dom';
 import { TabTitle } from '../components/GeneralFunction';
+import { incrementQuantity,decrementQuantity } from '../features/AddToCart/CartSlice';
 export default function CartPage(){
 
     TabTitle("Cart Products")
@@ -29,6 +30,14 @@ export default function CartPage(){
 
     }
 
+    const handleIncrement = (id)=>{
+        dispatch(incrementQuantity(id))
+    }
+
+    const handleDecrement = (id)=>{
+        dispatch(decrementQuantity(id))
+    }
+
     return(
         <>
         <section className={classes.CartBg}>
@@ -44,12 +53,13 @@ export default function CartPage(){
                            <h4>{item.name.length>20?`${item.name.slice(0,20)}...`: item.name}</h4>
                            <p>Cuisine:{item.cuisine}</p>
                            <p> Price:<LiaRupeeSignSolid/>{item.caloriesPerServing}</p>
+                           <p>Product Quantity : {item.quantity}</p>
                         </div>
                     </div>
                     <div className={classes.updateBtn}>
-                       <button>+</button>
+                       <button onClick={()=>handleIncrement(item.id)}>+</button>
                        <span>{item.quantity}</span>
-                       <button>-</button>
+                       <button onClick={()=>handleDecrement(item.id)}>-</button>
                     </div>
                     <div className={classes.accesBtn}>
                         {/* <button className={classes.updatebutton}>Update</button> */}
@@ -67,15 +77,15 @@ export default function CartPage(){
              <h1>Bill Details</h1>
              <div className="BillContent">
              <div className={classes.BillDetail}>
-                <p><PiNotepadFill />Items total</p>
+                <p><PiNotepadFill /> Items total</p>
                 <p>₹{TotalItemCost}</p>
              </div>
              <div className={classes.BillDetail}>
-                <p><PiNotepadFill />Delivery charge</p>
+                <p><PiNotepadFill /> Delivery charge</p>
                 <p>Free</p>
              </div>
              <div className={classes.BillDetail}>
-                <p><PiNotepadFill />Handling charge</p>
+                <p><PiNotepadFill /> Handling charge</p>
                 <p>₹{handlingCharge}</p>
              </div>
              </div>

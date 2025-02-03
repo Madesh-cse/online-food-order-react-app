@@ -31,7 +31,7 @@ function Login() {
             isValidate = false
             validateError.Email = 'Email Required'
         }
-        else if(!/\S+\S+\S\.+/.test(userData.Email)){
+        else if(!/\S+@\S+\.\S+/.test(userData.Email)){
             isValidate = false
             validateError.Email = 'Email is not valid'
         }
@@ -56,10 +56,12 @@ function Login() {
             localStorage.setItem("user",JSON.stringify(user))
             navigate('/')
            }
-           else{
+           else {
+
             seterror(validateError)
             setuserValidate(isValidate)
            }
+          
          })
         }  
     }
@@ -80,7 +82,7 @@ function Login() {
                                     </div>
                                     <div className={classes.Nameinput}>
                                       <label htmlFor="">Email</label>
-                                      <input type="Email" onChange={(e)=>setuserData({...userData,Email:e.target.value})} placeholder='Enter Your Email' required />
+                                      <input type="Email" onChange={(e)=>setuserData({...userData,Email:e.target.value})} placeholder='Enter Your Email'  />
                                       {userValidate ? '':<span className={classes.error}>{error.Email}</span>}
                                     </div>
                                 </div>
@@ -90,7 +92,7 @@ function Login() {
                                     </div>
                                     <div className={classes.Nameinput}>
                                       <label htmlFor="">Password</label>
-                                      <input type="password" onChange={(e)=>setuserData({...userData,password:e.target.value})} placeholder='Enter Your Password' required />
+                                      <input type="password" onChange={(e)=>setuserData({...userData,password:e.target.value})} placeholder='Enter Your Password'  />
                                       {userValidate ? '':<span className={classes.error}>{error.password}</span>}
                                     </div>
                                 </div>
