@@ -9,7 +9,7 @@ export default function Footer(){
     return(
         <section className={classes.FooterWidth}>
             <div className={classes.FooterInnerWidth}>
-                <h3>VS CODE</h3>
+                <h3>Kinetic Food App</h3>
              <div className={classes.language}>
                 <select name="country" id="country">
                     <option value="India">India</option>
@@ -28,7 +28,7 @@ export default function Footer(){
             </div>
             <div className={classes.FooterContent}>
                 <div className={classes.About}>
-                    <h3>ABOUT VSCODE</h3>
+                    <h3>ABOUT Kinetic Food App</h3>
                     <ul>
                         <li>Who We Are</li>
                         <li>Blog</li>

@@ -21,6 +21,9 @@
     margin-top: 30px;
     padding: 20px;
 }
+.productContent h3{
+    color:#000;
+}
 .arrow{
     border:1px solid  #e74a3b !important;
     margin-top: 20px;

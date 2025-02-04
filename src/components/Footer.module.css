@@ -10,6 +10,7 @@
 }
 .FooterInnerWidth h3{
     margin-left: 30px;
+    color:gray;
 }
 .language{
     display: flex;
@@ -31,6 +32,7 @@
 }
 .FooterContent h3{
     font-weight: 500;
+    color:gray;
 }
 .FooterContent ul{
     list-style-type: none;

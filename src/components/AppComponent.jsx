@@ -13,7 +13,7 @@ export default function AppComponentItem(){
                     <img src="https://b.zmtcdn.com/data/o2_assets/ce5bc038a8a2d4f8f24465c8826182af1726501431.png" alt="" />
                 </div>
                 <div className={classes.AppContent}>
-                    <h1>Get the VS Code App</h1>
+                    <h1>Get the Kinetic Food App</h1>
                     <p>We will send you a link, open it on your phone to download the app</p>
                     <div className={classes.AppInput}>
                         <input type="radio"  onClick={HandleEmail} defaultChecked />
