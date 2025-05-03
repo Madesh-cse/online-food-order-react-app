@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/online-food-order-react-app/static/css/main.bbd3f352.css",
-    "main.js": "/online-food-order-react-app/static/js/main.12cfd5cc.js",
+    "main.css": "/online-food-order-react-app/static/css/main.d4c89163.css",
+    "main.js": "/online-food-order-react-app/static/js/main.8141dff5.js",
     "static/js/453.eebb8bdc.chunk.js": "/online-food-order-react-app/static/js/453.eebb8bdc.chunk.js",
     "static/media/collection4..jpg": "/online-food-order-react-app/static/media/collection4..ec81ac68a05ab7fd3765.jpg",
     "static/media/collection3.jpg": "/online-food-order-react-app/static/media/collection3.706cd2afcd2a4f799957.jpg",
@@ -17,12 +17,12 @@
     "static/media/slick.ttf": "/online-food-order-react-app/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/online-food-order-react-app/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/online-food-order-react-app/index.html",
-    "main.bbd3f352.css.map": "/online-food-order-react-app/static/css/main.bbd3f352.css.map",
-    "main.12cfd5cc.js.map": "/online-food-order-react-app/static/js/main.12cfd5cc.js.map",
+    "main.d4c89163.css.map": "/online-food-order-react-app/static/css/main.d4c89163.css.map",
+    "main.8141dff5.js.map": "/online-food-order-react-app/static/js/main.8141dff5.js.map",
     "453.eebb8bdc.chunk.js.map": "/online-food-order-react-app/static/js/453.eebb8bdc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bbd3f352.css",
-    "static/js/main.12cfd5cc.js"
+    "static/css/main.d4c89163.css",
+    "static/js/main.8141dff5.js"
   ]
 }
