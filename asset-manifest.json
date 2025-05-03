@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/online-food-order-react-app/static/css/main.bbd3f352.css",
+    "main.js": "/online-food-order-react-app/static/js/main.12cfd5cc.js",
+    "static/js/453.eebb8bdc.chunk.js": "/online-food-order-react-app/static/js/453.eebb8bdc.chunk.js",
+    "static/media/collection4..jpg": "/online-food-order-react-app/static/media/collection4..ec81ac68a05ab7fd3765.jpg",
+    "static/media/collection3.jpg": "/online-food-order-react-app/static/media/collection3.706cd2afcd2a4f799957.jpg",
+    "static/media/collection1.jpg": "/online-food-order-react-app/static/media/collection1.3bfc01aad5e6874c38f3.jpg",
+    "static/media/collection2.jpg": "/online-food-order-react-app/static/media/collection2.07cba867115731f925f1.jpg",
+    "static/media/banner-img.jpg": "/online-food-order-react-app/static/media/banner-img.4623d4d836f24ad2f3bb.jpg",
+    "static/media/banner.jpg": "/online-food-order-react-app/static/media/banner.53c9a65813eff99a14e9.jpg",
+    "static/media/chef.jpg": "/online-food-order-react-app/static/media/chef.1fbf13147b15791b248f.jpg",
+    "static/media/logo.png": "/online-food-order-react-app/static/media/logo.3926aa8b9ea1ecab706e.png",
+    "static/media/TrendingImg.jpg": "/online-food-order-react-app/static/media/TrendingImg.907ef4141b1bdec7cf37.jpg",
+    "static/media/slick.svg": "/online-food-order-react-app/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/online-food-order-react-app/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/online-food-order-react-app/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/online-food-order-react-app/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/online-food-order-react-app/index.html",
+    "main.bbd3f352.css.map": "/online-food-order-react-app/static/css/main.bbd3f352.css.map",
+    "main.12cfd5cc.js.map": "/online-food-order-react-app/static/js/main.12cfd5cc.js.map",
+    "453.eebb8bdc.chunk.js.map": "/online-food-order-react-app/static/js/453.eebb8bdc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bbd3f352.css",
+    "static/js/main.12cfd5cc.js"
+  ]
+}
