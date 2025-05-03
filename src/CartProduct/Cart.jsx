@@ -10,7 +10,7 @@ export default function CartPage(){
 
     TabTitle("Cart Products")
 
-    const {items:cartItem,TotalItemCost,handlingCharge,grantTotal,tempItem} = useSelector((state)=>state.Cart)
+    const {items:cartItem,TotalItemCost,handlingCharge,grantTotal} = useSelector((state)=>state.Cart)
 
     // console.log(tempItem)
 
