@@ -8,7 +8,6 @@ import { useSelector } from "react-redux"
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import UserProfile from "../Authentication/UserProfile";
-import ProductModal from "../RestaruntPages/ProductCartModal";
 export default function Navbar(){
 
     const selector = useSelector((state)=>state.Cart.items)
